@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="testSuite" xmlns="http://testng.org/testng">
+  <test  name="Test">
+    <classes>
+   
+     
+      <class name="testSuite.OnlineAdmissionTest"/>
+      <class name="testSuite.KSGugCourseTests"/> 
+      
+       <class name="testSuite.KSGPgcoursesTests"/>
+         <class name="testSuite.OnlinePayementTestss"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- testSuite -->
+
+
+

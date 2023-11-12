@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestSuite]">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testSuite.OnlinePayementTestss">
+        <methods>
+          <include name="emptyInputsTest"/>
+          <include name="openBrowser"/>
+          <include name="closeBrowser"/>
+          <include name="OnlinePaymentTestWithValidInputs"/>
+          <include name="OnlinePaymentTestwithInvalidInputs"/>
+        </methods>
+      </class> <!-- testSuite.OnlinePayementTestss -->
+      <class name="testSuite.KSGugCourseTests">
+        <methods>
+          <include name="selectCourseBscInformationTechnology"/>
+          <include name="selectCourseBaEL"/>
+          <include name="selectCourseBscComputerScience"/>
+          <include name="selectCourseBscCSHM"/>
+          <include name="selectCourseBcomPA"/>
+          <include name="selectCourseBbaCA"/>
+          <include name="selectCourseBscECS"/>
+          <include name="selectCourseBscBT"/>
+          <include name="selectCourseBcom"/>
+          <include name="selectCourseBCA"/>
+          <include name="flushReport"/>
+          <include name="openBrowser"/>
+          <include name="selectCourseBscM"/>
+          <include name="selectCourseBscMW"/>
+          <include name="selectCourseBscP"/>
+          <include name="selectCourseBcomCA"/>
+        </methods>
+      </class> <!-- testSuite.KSGugCourseTests -->
+      <class name="testSuite.OnlineAdmissionTest">
+        <methods>
+          <include name="flushReport"/>
+          <include name="OnlineAddmissionFormForRegistrationWithInvalidInputs"/>
+          <include name="OnlineAddmissionFormForRegistrationWithValidInputs"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testSuite.OnlineAdmissionTest -->
+      <class name="testSuite.KSGPgcoursesTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="selectMaEl"/>
+          <include name="selectMcom1B"/>
+          <include name="selectMscIT"/>
+          <include name="selectMscM"/>
+          <include name="selectMscB"/>
+          <include name="selectMcomCA"/>
+          <include name="selectMPhilCS"/>
+          <include name="selectMphilTamil"/>
+          <include name="selectPhdCS"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- testSuite.KSGPgcoursesTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

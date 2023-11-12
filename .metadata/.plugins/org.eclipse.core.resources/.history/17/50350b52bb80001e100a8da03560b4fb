@@ -1,0 +1,52 @@
+package testSuite;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pageLocatorsRepo.OnlinePaymentRepo;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+
+@Listeners(utilities.TestListners.class)
+
+public class OnlinePayementTestss extends KSGExtentReports {
+    
+    OnlinePaymentRepo pay = new OnlinePaymentRepo(DriversInit.getDriver());
+    
+    @Test(priority=0)
+    public void OnlinePaymentTest() {
+    	
+        
+        reportConfig1(); // Call this method to set up the report for each test
+        test = CreateTest1("WebSite Launched with given Url......"); // Create a new test object for each test
+        pay.enterDetailsForOnlinePayment();
+        test.info("Website Launched with given Url......");
+    }
+  
+    @Test(priority=1)
+    public void emptyInputsTest() {
+    	
+        DriversInit.driver.get("https://www.ksgcollege.com/");
+        pay.emptyInput();
+        test = CreateTest1("Submitting online payment form without filling details. ");
+        test.pass("Valid Inputs accepted. Test with Valid Inputs Passed. ");
+    }
+
+    @Test(priority=2)
+    public void OnlinePaymentTest1() {
+    	
+        DriversInit.driver.get("https://www.ksgcollege.com/");
+        pay.enterDetailsForOnlinePayment1();
+      
+       
+        test.fail("Test Failed . Invalid Inputs accepted.");
+    }
+
+    @AfterTest
+    public void closeBrowser() {
+        flushTest1();
+        DriversInit.quitDriver();
+    }
+}

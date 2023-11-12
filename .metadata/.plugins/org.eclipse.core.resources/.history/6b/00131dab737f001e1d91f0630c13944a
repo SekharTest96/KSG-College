@@ -1,0 +1,12 @@
+package constant;
+
+public class Constantss {
+
+    public static final String KSGHomeUrl = "https://www.ksgcollege.com/";
+
+    public static final String tNGReport = "F:\\KSGCollege\\KSGAutomationTest\\target\\TestNGReports\\testNG.html";
+
+    public static final String screenshotLocation = "F:\\KSGCollege\\scrs" + Math.random() + ".png";
+
+    public static final String websiteUrl = "";
+}

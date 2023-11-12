@@ -1,0 +1,51 @@
+package testSuite;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import pageLocatorsRepo.KSGonlineAdmissionRepo;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+@Test
+public class OnlineAdmissionTest extends KSGExtentReports {
+
+	
+	KSGonlineAdmissionRepo onlineAddmission = new KSGonlineAdmissionRepo(DriversInit.getDriver());
+	
+	
+	@BeforeTest
+	public void addmissionRegistrationUrl() {
+		//DriversInit.driver.get("https://www.ksgcollege.com/online-admissions.php");
+		
+	}
+	
+	
+	@Test(priority=1)
+	public void OnlineAddmissionFormForRegistration() throws InterruptedException {
+		
+		/*WebElement OnlineAddmissionImage = DriversInit.driver.findElement(By.xpath("//a[@href=\"online-admissions.php\"]"));
+		Actions act = new Actions(DriversInit.getDriver());
+		act.click(OnlineAddmissionImage).build().perform();
+		OnlineAddmissionImage.isDisplayed();
+		
+		OnlineAddmissionImage.click();*/
+		
+		
+		onlineAddmission.enterDetailsForOnlineAdmission();
+		reportConfig1();
+		CreateTest1("Passed Test With Valid Inputs.");
+		
+	}
+	
+	@AfterTest
+	public void closeBrowser() {
+		
+		DriversInit.quitDriver();
+	}
+}

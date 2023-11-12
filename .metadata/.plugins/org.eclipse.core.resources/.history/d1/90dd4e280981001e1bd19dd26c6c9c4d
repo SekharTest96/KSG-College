@@ -1,0 +1,133 @@
+package testSuite;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pageLocatorsRepo.KSGPgcourses;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+
+@Listeners(utilities.TestListners.class)
+
+
+
+public class KSGPgcoursesTests extends KSGExtentReports {
+
+	KSGPgcourses course = new KSGPgcourses(DriversInit.getDriver());
+
+	
+
+	// Now you can use extentReport to create tests, log information, and flush the reports.
+
+	
+	@BeforeSuite
+	public void beforeTesting() {
+		 reportConfig1();  
+		
+	}
+	
+	@Test(priority=1)
+	public void selectMaEl() {
+		
+		  test =  CreateTest1("  Clicked on M.A English Literature . ");
+		
+		course.hoverOnCourseAndPGCourseAndSelectMAel();
+		
+	  test.fail(" But it do not navigate to M.A English Literature  webpage. So Test is Failed. ");
+
+		
+	
+	}
+	
+	@Test(priority=2)
+	public void selectMscIT() {
+		
+		  test =  CreateTest1(" Clicked on M.Sc Information Technology .");
+		
+		course.checkMscIT();
+		
+		 test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+		
+	}
+	
+	@Test(priority=3)
+	public void selectMscM() {
+		
+		 test = CreateTest1(" Clicked on M.Sc Mathematics . But it do not navigate to M.Sc Mathematics  webpage");
+		course.checkMscM();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+		
+	}
+	
+	@Test(priority=4)
+	public void selectMscB() {
+		
+		 test =  CreateTest1(" Clicked on M.Sc Biotechnology . But it do not navigate to M.Sc Biotechnology webpage");
+		course.checkMscB();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+	}
+	
+	@Test(priority=5)
+	public void selectMcomCA() {
+		 test = CreateTest1(" Clicked on M.Com (CA) . But it do not navigate to M.Com (CA) webpage");
+		course.checkMcomCA();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+	}
+	
+	@Test(priority=6)
+	public void selectMcom1B() {
+		 test = CreateTest1(" Clicked on M.Com (IB) . But it do not navigate to M.Com (IB) webpage");
+		course.checkMcom1B();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+	}
+	
+	@Test(priority=7)
+	public void selectMphilTamil() {
+		
+		 test = CreateTest1(" Clicked on  MPhil Tamil . But it do not navigate to MPhil Tamil webpage");
+		course.checkMphilTamil();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+	}
+	
+	@Test(priority=8)
+	public void selectMPhilCS() {
+		
+		 test = CreateTest1(" Clicked on MPhil Computer Science . But it do not navigate to MPhil Computer Science  webpage");
+		
+		course.checkMPhilCS();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+	}
+	
+	@Test(priority=9)
+	public void selectPhdCS() {
+		
+		 test =  CreateTest1(" Clicked on Ph.D Computer Science . But it do not navigate to Ph.D Computer Science webpage");
+		course.checkPhdCS();
+		test.fail(" But it do not navigate to  M.Sc Information Technology  webpage. So Test is Failed. ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
+		
+		
+		System.out.println("All tests failed because For every course selected in PG Course have no specific webpage. (not navigating to a specific \r\n"
+				+ "	 Webpage.");
+		
+		CreateTest1("All tests failed because For every course selected in PG Course have no specific webpage."
+				+ "(not navigating to a specific  Webpage. when click on a particular PG Course.");
+		
+		
+		flushTest1();
+		
+		DriversInit.quitDriver();
+		
+	}
+	
+	/* All tests failed because For every course selected in PG Course have no specific webpage. (not navigating to a specific 
+	 * Webpage. )*/
+	
+}

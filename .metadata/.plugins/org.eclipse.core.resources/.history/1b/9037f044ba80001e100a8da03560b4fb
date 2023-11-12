@@ -1,0 +1,85 @@
+package testSuite;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pageLocatorsRepo.OnlinePaymentRepo;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+
+@Listeners(utilities.TestListners.class)
+
+public class OnlinePayementTestss extends KSGExtentReports {
+	
+	OnlinePaymentRepo pay = new OnlinePaymentRepo(DriversInit.getDriver());
+	
+  @Test(priority=0)
+  public void OnlinePaymentTest() {
+	  
+	  KSGExtentReports.reportConfig1();  
+	  pay.enterDetailsForOnlinePayment();
+	 
+	  KSGExtentReports.CreateTest1("WebSite Launched with given Url......");
+	  KSGExtentReports.CreateTest1("Online Payment Test Passed with Valid Inputs.");
+		test.info("Website Launched with given Url......");
+		
+  }
+  
+  @Test(priority=1)
+  public void emptyInputsTest() {
+	  DriversInit.driver.get("https://www.ksgcollege.com/");
+	  pay.emptyInput();
+	  KSGExtentReports.CreateTest1("Submitting online payment form without filling details. ");
+	  KSGExtentReports.test.pass("Valid Inputs accepted. Test with Valid Inputs Passed. ");
+  }
+  
+  @Test(priority=2)
+  public void OnlinePaymentTest1() {
+	  
+	  DriversInit.driver.get("https://www.ksgcollege.com/");
+	  pay.enterDetailsForOnlinePayment1();
+	  reportConfig1();  
+	  KSGExtentReports.CreateTest1("WebSite Launched with given Url......");
+	  KSGExtentReports.CreateTest1("Online Payment Test Failed with Invalid Inputs. "
+				+ "First Name:\n"
+				
+				+ "Last Name:\n"
+				
+				+ "Zip Code:\n"
+				
+				+ "Email ID:\n"
+				
+				+ "Mobile/Cell Number:\n"
+				
+				+ "Address1:\n"
+			
+				+ "Address2:\n"
+			
+				+ "City:\n"
+			
+				+ "State:\n"
+				
+				+ "Country:"
+				+" 1. when we click on pay without filling the input fields it is navigating to further page, without giving "
+				+"warning for not filling required inputs."
+				+" 2. Name , city, state, country fields accepting numbers also"
+				+" 3. Mail id field accepting any thing. It is not giving warning mail id entered is wrong. "
+				+" 4. Mobile number accept letters and cell numbers less than or greater than 10 digits. ");
+		
+	  KSGExtentReports.test.fail("Test Failed . Invalid Inputs accepted.");
+		
+  }
+  
+  @AfterTest
+  public void closeBrowser() {
+	  
+	  
+		flushTest1();
+	  DriversInit.quitDriver();
+  }
+  
+  
+  
+}

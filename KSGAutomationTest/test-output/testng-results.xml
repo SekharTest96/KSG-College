@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="9" failed="5" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+    </line>
+    <line>
+      <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-11-12T22:00:50 IST" name="Default suite" finished-at="2023-11-12T22:02:59 IST" duration-ms="128841">
+    <groups>
+    </groups>
+    <test started-at="2023-11-12T22:00:50 IST" name="Default test" finished-at="2023-11-12T22:02:59 IST" duration-ms="128841">
+      <class name="testSuite.KSGugCourseTests">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:00:50 IST" name="openBrowser" finished-at="2023-11-12T22:00:50 IST" duration-ms="188" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="selectCourseBCA()[pri:1, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:00:50 IST" name="selectCourseBCA" finished-at="2023-11-12T22:02:20 IST" duration-ms="89392" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBCA -->
+        <test-method signature="selectCourseBcomCA()[pri:2, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:20 IST" name="selectCourseBcomCA" finished-at="2023-11-12T22:02:21 IST" duration-ms="1119" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBcomCA -->
+        <test-method signature="selectCourseBcomPA()[pri:3, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:22 IST" name="selectCourseBcomPA" finished-at="2023-11-12T22:02:23 IST" duration-ms="1445" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBcomPA -->
+        <test-method signature="selectCourseBscComputerScience()[pri:4, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:24 IST" name="selectCourseBscComputerScience" finished-at="2023-11-12T22:02:25 IST" duration-ms="1418" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscComputerScience -->
+        <test-method signature="selectCourseBscInformationTechnology()[pri:5, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:26 IST" name="selectCourseBscInformationTechnology" finished-at="2023-11-12T22:02:27 IST" duration-ms="1084" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscInformationTechnology -->
+        <test-method signature="selectCourseBcom()[pri:6, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:28 IST" name="selectCourseBcom" finished-at="2023-11-12T22:02:29 IST" duration-ms="1097" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBcom -->
+        <test-method signature="selectCourseBscMW()[pri:7, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:29 IST" name="selectCourseBscMW" finished-at="2023-11-12T22:02:30 IST" duration-ms="920" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Why Choose KSG?] but found [B.Sc Multimedia & Webtechnology]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia & Webtechnology]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageLocatorsRepo.KSGUgCourse.checkBscMW(KSGUgCourse.java:226)
+at testSuite.KSGugCourseTests.selectCourseBscMW(KSGugCourseTests.java:101)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscMW -->
+        <test-method signature="selectCourseBscBT()[pri:8, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:31 IST" name="selectCourseBscBT" finished-at="2023-11-12T22:02:32 IST" duration-ms="1491" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscBT -->
+        <test-method signature="selectCourseBscCSHM()[pri:9, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:33 IST" name="selectCourseBscCSHM" finished-at="2023-11-12T22:02:34 IST" duration-ms="1159" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscCSHM -->
+        <test-method signature="selectCourseBscECS()[pri:10, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:34 IST" name="selectCourseBscECS" finished-at="2023-11-12T22:02:35 IST" duration-ms="833" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [ELECTRONICS AND COMMUNICATION
+SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
+SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageLocatorsRepo.KSGUgCourse.checkBscECS(KSGUgCourse.java:295)
+at testSuite.KSGugCourseTests.selectCourseBscECS(KSGugCourseTests.java:129)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscECS -->
+        <test-method signature="selectCourseBscM()[pri:11, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:35 IST" name="selectCourseBscM" finished-at="2023-11-12T22:02:54 IST" duration-ms="18478" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscM -->
+        <test-method signature="selectCourseBaEL()[pri:12, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:54 IST" name="selectCourseBaEL" finished-at="2023-11-12T22:02:55 IST" duration-ms="308" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@30c3ae63]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9fc0a7b70c20a64fb1d2a97c841a022]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@30c3ae63]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+at pageLocatorsRepo.KSGUgCourse.checkBaEL(KSGUgCourse.java:335)
+at testSuite.KSGugCourseTests.selectCourseBaEL(KSGugCourseTests.java:149)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBaEL -->
+        <test-method signature="selectCourseBbaCA()[pri:13, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:55 IST" name="selectCourseBbaCA" finished-at="2023-11-12T22:02:55 IST" duration-ms="164" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable:  has no size and location
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@e280403]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9fc0a7b70c20a64fb1d2a97c841a022]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
+  (Session info: chrome=119.0.6045.124)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@e280403]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+at pageLocatorsRepo.KSGUgCourse.checkBbaCA(KSGUgCourse.java:357)
+at testSuite.KSGugCourseTests.selectCourseBbaCA(KSGugCourseTests.java:159)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBbaCA -->
+        <test-method signature="selectCourseBscP()[pri:14, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:56 IST" name="selectCourseBscP" finished-at="2023-11-12T22:02:58 IST" duration-ms="2404" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at pageLocatorsRepo.KSGUgCourse.checkBscP(KSGUgCourse.java:389)
+at testSuite.KSGugCourseTests.selectCourseBscP(KSGugCourseTests.java:169)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- selectCourseBscP -->
+        <test-method is-config="true" signature="flushReport()[pri:0, instance:testSuite.KSGugCourseTests@2bf94401]" started-at="2023-11-12T22:02:59 IST" name="flushReport" finished-at="2023-11-12T22:02:59 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReport -->
+      </class> <!-- testSuite.KSGugCourseTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

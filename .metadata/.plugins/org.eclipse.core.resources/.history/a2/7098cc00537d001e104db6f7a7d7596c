@@ -1,0 +1,173 @@
+package pageLocatorsRepo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import utilities.DriversInit;
+
+public class KSGcourse {
+
+	public KSGcourse(WebDriver driver) {
+		PageFactory.initElements( driver, this);
+	}
+	
+	@FindBy(xpath="(//a[contains(text(), \"Home\")])[1]")WebElement Home;
+	@FindBy(xpath="//a[contains(text(), \"Course\")]") WebElement Course;
+	@FindBy(how=How.XPATH, using="//a[contains(text(), \"UG Course\")]")WebElement UGcourse;
+	@FindBy(xpath="//a[contains(text(), \"B.C.A\")]")WebElement BCA;
+	@FindBy(xpath="//h2[contains(text(), \"Computer Applications (BCA)\")]")WebElement BCAheading;
+	@FindBy(xpath="//a[contains(text(), \"B.Com (CA)\")]")WebElement BcomCA;
+	
+	@FindBy(xpath="//a[contains(text(), \"B.Com (Professional Accounting)\")]")WebElement  BcomPA;
+	@FindBy(xpath="//a[contains(text(), \"B.Sc Computer Science\")]")WebElement  BscCS;
+	@FindBy(xpath="//a[contains(text(), \"B.Sc Information Technology\")]")WebElement BscIT;
+	@FindBy(xpath="(//a[contains(text(), \"B.Com\")])[1]")WebElement Bcom;
+	//@FindBy(xpath="")WebElement ;
+	//@FindBy(xpath="")WebElement ;
+	//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+	//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+		//@FindBy(xpath="")WebElement ;
+	
+	
+	
+	
+	
+	public void hoverOnCourseAndUGCourse() {
+		
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(BCA).build().perform();
+		BCA.click();
+		
+		WebElement BCAtitle = DriversInit.getDriver().findElement(By.tagName("h2"));
+	    String expectedTitle = "Computer Applications (BCA)";
+	    String actualTitle = BCAtitle.getText();
+	    Assert.assertEquals(expectedTitle, actualTitle);
+	    
+	    act.moveToElement(Home).build().perform();
+	    Home.click();
+	
+	}
+	
+	public void checkBcomCA() {
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(BcomCA).build().perform();
+		BcomCA.click();
+		
+		WebElement BcomCaTitle = DriversInit.getDriver().findElement(By.tagName("h2"));
+		String expectedTitle = "COMMERCE WITH COMPUTER APPLICATIONS";
+		String actualTitle = BcomCaTitle.getText();
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		
+		WebElement BcomSubTitle = DriversInit.getDriver().findElement(By.tagName("h6"));
+		String expectedTitle1 = "B.Com Professional Accounting";
+		String actualTitle1 = BcomSubTitle.getText();
+		Assert.assertEquals(expectedTitle1, actualTitle1);
+		
+		 act.moveToElement(Home).build().perform();
+		    Home.click();
+	}
+	
+	public void checkBcomPA() {
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(BcomPA).build().perform();
+		BcomPA.click();
+		
+		WebElement BcomPa = DriversInit.getDriver().findElement(By.tagName("h2"));
+		String expectedTitle = "Bcom Professional Accounting (B.Com(PA))";
+		String actualTitle = BcomPa.getText();
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		 act.moveToElement(Home).build().perform();
+		    Home.click();
+	}
+	
+	public void checkBscCS() {
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(BscCS).build().perform();
+		BscCS.click();
+		
+		WebElement BscCSTitle = DriversInit.getDriver().findElement(By.tagName("h2"));
+		String expectedTitle = "COMPUTER SCIENCE (B.SC)";
+		String actualTitle = BscCSTitle.getText();
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		WebElement BscCSSubTitle = DriversInit.getDriver().findElement(By.tagName("h6"));
+		String expectedTitle1 = "Computer Applications (BCA)";
+		String actualTitle1 = BscCSSubTitle.getText();
+		Assert.assertEquals(expectedTitle1, actualTitle1);
+		
+		 act.moveToElement(Home).build().perform();
+		    Home.click();
+	}
+	
+	public void checkBscIT() {
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(BscIT).build().perform();
+		BscIT.click();
+		
+		WebElement BscITTitle = DriversInit.getDriver().findElement(By.tagName("h2"));
+		String expectedTitle = "B.Sc Information Technology";
+		String actualTitle = BscITTitle.getText();
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		WebElement BscITSubTitle = DriversInit.getDriver().findElement(By.tagName("h6"));
+		String expectedTitle1 = "B.Sc Information Technology";
+		String actualTitle1 = BscITSubTitle.getText();
+		Assert.assertEquals(expectedTitle1, actualTitle1);
+		
+		 act.moveToElement(Home).build().perform();
+		    Home.click();
+	}
+	
+	public void checkBcom() {
+		Actions act = new Actions(DriversInit.driver);
+		act.moveToElement(Course).build().perform();
+		act.moveToElement(UGcourse);
+		act.moveToElement(Bcom).build().perform();
+		Bcom.click();
+		
+		WebElement BcomTitle = DriversInit.getDriver().findElement(By.tagName("h2"));
+		String expectedTitle = "Commerce(B.Com)";
+		String actualTitle = BcomTitle.getText();
+		Assert.assertEquals(expectedTitle, actualTitle);
+		
+		WebElement BcomSubTitle = DriversInit.getDriver().findElement(By.tagName("h6"));
+		String expectedTitle1 = "Commerce(B.Com)";
+		String actualTitle1 = BcomSubTitle.getText();
+		Assert.assertEquals(expectedTitle1, actualTitle1);
+		
+		 act.moveToElement(Home).build().perform();
+		    Home.click();
+	}
+	
+}

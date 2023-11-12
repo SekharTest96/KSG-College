@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite  >
+<suite name="Automate All Tests">
+  <test thread-count="5" name="Test">
+   
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

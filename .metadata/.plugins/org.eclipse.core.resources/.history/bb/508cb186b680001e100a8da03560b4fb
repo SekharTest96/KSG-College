@@ -1,0 +1,139 @@
+package testSuite;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
+
+import constant.Constantss;
+import freemarker.log.Logger;
+import pageLocatorsRepo.KSGPgcourses;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+
+@Listeners(utilities.TestListners.class)
+
+
+
+public class KSGPgcoursesTests extends KSGExtentReports {
+
+	KSGPgcourses course = new KSGPgcourses(DriversInit.getDriver());
+
+	
+
+	// Now you can use extentReport to create tests, log information, and flush the reports.
+
+	
+	@BeforeClass
+	public void beforeTesting() {
+		 reportConfig1();  
+		
+	}
+	
+	@Test(priority=1)
+	public void selectMaEl() {
+		
+		ExtentTest test = CreateTest1(" Clicked on M.A English Literature . But it do not navigate to M.A English Literature  webpage.  ");
+		
+		course.hoverOnCourseAndPGCourseAndSelectMAel();
+		
+	  
+
+		
+	
+	}
+	
+	@Test(priority=2)
+	public void selectMscIT() {
+		
+		CreateTest1(" Clicked on M.Sc Information Technology . But it do not navigate to M.Sc Information Technology  webpage");
+		
+		course.checkMscIT();
+		
+		
+		
+	}
+	
+	@Test(priority=3)
+	public void selectMscM() {
+		
+	CreateTest1(" Clicked on M.Sc Mathematics . But it do not navigate to M.Sc Mathematics  webpage");
+		course.checkMscM();
+	
+		
+	}
+	
+	@Test(priority=4)
+	public void selectMscB() {
+		
+		CreateTest1(" Clicked on M.Sc Biotechnology . But it do not navigate to M.Sc Biotechnology webpage");
+		course.checkMscB();
+		
+	}
+	
+	@Test(priority=5)
+	public void selectMcomCA() {
+		CreateTest1(" Clicked on M.Com (CA) . But it do not navigate to M.Com (CA) webpage");
+		course.checkMcomCA();
+		
+	}
+	
+	@Test(priority=6)
+	public void selectMcom1B() {
+		CreateTest1(" Clicked on M.Com (IB) . But it do not navigate to M.Com (IB) webpage");
+		course.checkMcom1B();
+		
+	}
+	
+	@Test(priority=7)
+	public void selectMphilTamil() {
+		
+	 CreateTest1(" Clicked on  MPhil Tamil . But it do not navigate to MPhil Tamil webpage");
+		course.checkMphilTamil();
+		
+	}
+	
+	@Test(priority=8)
+	public void selectMPhilCS() {
+		
+		CreateTest1(" Clicked on MPhil Computer Science . But it do not navigate to MPhil Computer Science  webpage");
+		
+		course.checkMPhilCS();
+		
+	}
+	
+	@Test(priority=9)
+	public void selectPhdCS() {
+		
+		 CreateTest1(" Clicked on Ph.D Computer Science . But it do not navigate to Ph.D Computer Science webpage");
+		course.checkPhdCS();
+		 
+		
+	}
+	
+	@AfterClass
+	public void closeBrowser() {
+		
+		
+		System.out.println("All tests failed because For every course selected in PG Course have no specific webpage. (not navigating to a specific \r\n"
+				+ "	 Webpage.");
+		
+		CreateTest1("All tests failed because For every course selected in PG Course have no specific webpage."
+				+ "(not navigating to a specific  Webpage. when click on a particular PG Course.");
+		
+		
+		flushTest1();
+		
+		DriversInit.quitDriver();
+		
+	}
+	
+	/* All tests failed because For every course selected in PG Course have no specific webpage. (not navigating to a specific 
+	 * Webpage. )*/
+	
+}

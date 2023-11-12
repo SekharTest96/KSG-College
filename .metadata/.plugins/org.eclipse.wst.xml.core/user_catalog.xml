@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <public publicId="-//TestNG//DTD TestNG Configuration 1.0//EN" uri="https://testng.org/testng-1.0.dtd"/>
+  <public publicId="-//TestNG//DTD TestNG 1.0//EN" uri="https://testng.org/testng-1.0.dtd" webURL="https://testng.org/testng-1.0.dtd"/>
+</catalog>

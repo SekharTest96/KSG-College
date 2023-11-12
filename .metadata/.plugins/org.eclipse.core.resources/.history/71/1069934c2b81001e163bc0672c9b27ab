@@ -1,0 +1,80 @@
+package testSuite;
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import pageLocatorsRepo.KSGonlineAdmissionRepo;
+import testReports.KSGExtentReports;
+import utilities.DriversInit;
+
+
+
+@Listeners(utilities.TestListners.class)
+
+
+public class OnlineAdmissionTest extends KSGExtentReports  {
+
+	
+	KSGonlineAdmissionRepo onlineAddmission = new KSGonlineAdmissionRepo(DriversInit.getDriver());
+	
+	
+	@BeforeSuite
+	public void addmissionRegistrationUrl() {
+		//DriversInit.driver.get("https://www.ksgcollege.com/online-admissions.php");
+		reportConfig1();
+	}
+	
+	
+	@Test(priority=1)
+	public void OnlineAddmissionFormForRegistrationWithValidInputs() throws InterruptedException {
+		
+		/*WebElement OnlineAddmissionImage = DriversInit.driver.findElement(By.xpath("//a[@href=\"online-admissions.php\"]"));
+		Actions act = new Actions(DriversInit.getDriver());
+		act.click(OnlineAddmissionImage).build().perform();
+		OnlineAddmissionImage.isDisplayed();
+		
+		OnlineAddmissionImage.click();*/
+		
+		
+		 test =  CreateTest1("Onine Admission form filling  With Valid Inputs.");
+		
+		onlineAddmission.enterDetailsForOnlineAdmission();
+		
+		test.pass("Valid Inputs is Accepted. Test is passed.");
+		
+		
+	}
+	
+	@Test(priority=2)
+	public void OnlineAddmissionFormForRegistrationWithInvalidInputs() throws InterruptedException {
+		
+		/*WebElement OnlineAddmissionImage = DriversInit.driver.findElement(By.xpath("//a[@href=\"online-admissions.php\"]"));
+		Actions act = new Actions(DriversInit.getDriver());
+		act.click(OnlineAddmissionImage).build().perform();
+		OnlineAddmissionImage.isDisplayed();
+		
+		OnlineAddmissionImage.click();*/
+		
+		
+		 test =  CreateTest1("Onine Admission form filling  With Valid Inputs.");
+		
+		onlineAddmission.enterDetailsForOnlineAdmission();
+		
+		test.pass("Valid Inputs is Accepted. Test is passed.");
+		
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
+		
+		
+		flushTest1();
+		DriversInit.quitDriver();
+	}
+}

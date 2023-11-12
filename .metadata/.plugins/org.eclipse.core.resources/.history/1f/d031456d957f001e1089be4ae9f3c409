@@ -1,0 +1,18 @@
+package constant;
+
+import java.io.File;
+
+public class Constantss {
+
+    public static final String KSGHomeUrl = "https://www.ksgcollege.com/";
+
+    public static final String ExtentReports = System.getProperty("user.dir") + File.separator + "target" + File.separator + "extentReport.html";
+
+
+
+    public static final String screenshotLocationFail = "F:\\KSGCollege\\scrsFail" + System.currentTimeMillis() + ".png";
+    public static final String screenshotLocationSucess = "F:\\KSGCollege\\scrsFail"+Math.random()+".jpeg";
+
+
+    public static final String websiteUrl = "";
+}

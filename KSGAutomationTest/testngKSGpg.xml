@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite  >
+<!DOCTYPE suite>
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-     
-      <class name="testSuite.KSGPgcoursesTests"/>
-      
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+	<test thread-count="5" name="Test">
+		<classes>
+
+			<class name="testSuite.KSGPgcoursesTests" />
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

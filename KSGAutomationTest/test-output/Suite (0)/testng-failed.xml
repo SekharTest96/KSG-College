@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite (0)]">
-  <test thread-count="5" name="Test(failed)">
-    <classes>
-      <class name="testSuite.OnlineAdmissionTest">
-        <methods>
-          <include name="flushReport"/>
-          <include name="OnlineAddmissionFormForRegistrationWithValidInputs"/>
-          <include name="OnlineAddmissionFormForRegistrationWithInvalidInputs"/>
-          <include name="openBrowser"/>
-        </methods>
-      </class> <!-- testSuite.OnlineAdmissionTest -->
-    </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite (0)] -->
+	<test thread-count="5" name="Test(failed)">
+		<classes>
+			<class name="testSuite.OnlineAdmissionTest">
+				<methods>
+					<include name="flushReport" />
+					<include
+						name="OnlineAddmissionFormForRegistrationWithValidInputs" />
+					<include
+						name="OnlineAddmissionFormForRegistrationWithInvalidInputs" />
+					<include name="openBrowser" />
+				</methods>
+			</class> <!--
+			testSuite.OnlineAdmissionTest -->
+		</classes>
+	</test> <!--
+	Test(failed) -->
+</suite> <!--
+Failed suite [Suite (0)] -->

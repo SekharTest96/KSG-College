@@ -1,90 +1,117 @@
 <html>
+
 <head>
-<title>TestNG:  Default test</title>
-<link href="../testng.css" rel="stylesheet" type="text/css" />
-<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+	<title>TestNG: Default test</title>
+	<link href="../testng.css" rel="stylesheet" type="text/css" />
+	<link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
-<style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
-</style>
-<script type="text/javascript">
-<!--
-function flip(e) {
-  current = e.style.display;
-  if (current == 'block') {
-    e.style.display = 'none';
-    return 0;
-  }
-  else {
-    e.style.display = 'block';
-    return 1;
-  }
-}
+	<style type="text/css">
+		.log {
+			display: none;
+		}
 
-function toggleBox(szDivId, elem, msg1, msg2)
-{
-  var res = -1;  if (document.getElementById) {
-    res = flip(document.getElementById(szDivId));
-  }
-  else if (document.all) {
-    // this is the way old msie versions work
-    res = flip(document.all[szDivId]);
-  }
-  if(elem) {
-    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
-  }
-
-}
-
-function toggleAllBoxes() {
-  if (document.getElementsByTagName) {
-    d = document.getElementsByTagName('div');
-    for (i = 0; i < d.length; i++) {
-      if (d[i].className == 'log') {
-        flip(d[i]);
-      }
-    }
-  }
-}
-
-// -->
-</script>
+		.stack-trace {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		<!--
+		function flip(e) {
+		  current = e.style.display;
+		  if (current == 'block') {
+			e.style.display = 'none';
+			return 0;
+		  }
+		  else {
+			e.style.display = 'block';
+			return 1;
+		  }
+		}
+		
+		function toggleBox(szDivId, elem, msg1, msg2)
+		{
+		  var res = -1;  if (document.getElementById) {
+			res = flip(document.getElementById(szDivId));
+		  }
+		  else if (document.all) {
+			// this is the way old msie versions work
+			res = flip(document.all[szDivId]);
+		  }
+		  if(elem) {
+			if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+		  }
+		
+		}
+		
+		function toggleAllBoxes() {
+		  if (document.getElementsByTagName) {
+			d = document.getElementsByTagName('div');
+			for (i = 0; i < d.length; i++) {
+			  if (d[i].className == 'log') {
+				flip(d[i]);
+			  }
+			}
+		  }
+		}
+		
+		// -->
+	</script>
 
 </head>
+
 <body>
-<h2 align='center'>Default test</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/5/0</td>
-</tr><tr>
-<td>Started on:</td><td>Sun Nov 12 22:00:50 IST 2023</td>
-</tr>
-<tr><td>Total time:</td><td>128 seconds (128841 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscMW()'><b>selectCourseBscMW</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1612031141" onClick='toggleBox("Output-1612031141", this, "Show output", "Hide output");'>Show output</a>
+	<h2 align='center'>Default test</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>9/5/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Sun Nov 12 22:00:50 IST 2023</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>128 seconds (128841 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td><b>Attribute(s)</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscMW()'><b>selectCourseBscMW</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1612031141"
+					onClick='toggleBox("Output-1612031141", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1612031141" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1612031141">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia &amp; Webtechnology]
+				<a href="#Output-1612031141" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1612031141">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia &amp; Webtechnology]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -121,8 +148,12 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1612031141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1612031141'><pre>java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia &amp; Webtechnology]
+</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1612031141", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1612031141'>
+					<pre>java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia &amp; Webtechnology]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -159,19 +190,27 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBbaCA()'><b>selectCourseBbaCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-2039328061" onClick='toggleBox("Output-2039328061", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBbaCA()'><b>selectCourseBbaCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-2039328061"
+					onClick='toggleBox("Output-2039328061", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2039328061" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2039328061">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
+				<a href="#Output-2039328061" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-2039328061">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
   (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
@@ -223,8 +262,12 @@ Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2039328061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2039328061'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
+</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace2039328061", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace2039328061'>
+					<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
   (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
@@ -276,19 +319,27 @@ Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscECS()'><b>selectCourseBscECS</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1788662008" onClick='toggleBox("Output-1788662008", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscECS()'><b>selectCourseBscECS</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1788662008"
+					onClick='toggleBox("Output-1788662008", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1788662008" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1788662008">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
+				<a href="#Output-1788662008" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1788662008">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
 SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -326,8 +377,12 @@ SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1788662008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1788662008'><pre>java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
+</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1788662008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1788662008'>
+					<pre>java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
 SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
@@ -365,19 +420,27 @@ SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscP()'><b>selectCourseBscP</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1276002922" onClick='toggleBox("Output-1276002922", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscP()'><b>selectCourseBscP</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1276002922"
+					onClick='toggleBox("Output-1276002922", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1276002922" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1276002922">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
+				<a href="#Output-1276002922" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1276002922">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -414,8 +477,12 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1276002922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1276002922'><pre>java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
+</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1276002922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1276002922'>
+					<pre>java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1578)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -452,19 +519,27 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>2</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBaEL()'><b>selectCourseBaEL</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1680365536" onClick='toggleBox("Output-1680365536", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>2</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBaEL()'><b>selectCourseBaEL</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1680365536"
+					onClick='toggleBox("Output-1680365536", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1680365536" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1680365536">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
+				<a href="#Output-1680365536" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1680365536">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
   (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
@@ -516,8 +591,12 @@ Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1680365536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1680365536'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
+</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1680365536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1680365536'>
+					<pre>org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
   (Session info: chrome=119.0.6045.124)
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
@@ -569,126 +648,171 @@ Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBCA()'><b>selectCourseBCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1054477035" onClick='toggleBox("Output-1054477035", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+	</table>
+	<p>
+	<table width='100%' border='1' class='invocation-passed'>
+		<tr>
+			<td colspan='4' align='center'><b>PASSED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td><b>Attribute(s)</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBCA()'><b>selectCourseBCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1054477035"
+					onClick='toggleBox("Output-1054477035", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1054477035" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1054477035">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>89</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcomPA()'><b>selectCourseBcomPA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1872012709" onClick='toggleBox("Output-1872012709", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-1054477035" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1054477035">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>89</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcomPA()'><b>selectCourseBcomPA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1872012709"
+					onClick='toggleBox("Output-1872012709", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1872012709" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1872012709">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscM()'><b>selectCourseBscM</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1157484092" onClick='toggleBox("Output-1157484092", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-1872012709" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1872012709">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscM()'><b>selectCourseBscM</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1157484092"
+					onClick='toggleBox("Output-1157484092", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1157484092" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1157484092">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>18</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcom()'><b>selectCourseBcom</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-257650296" onClick='toggleBox("Output-257650296", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-1157484092" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1157484092">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>18</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcom()'><b>selectCourseBcom</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-257650296"
+					onClick='toggleBox("Output-257650296", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-257650296" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-257650296">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscComputerScience()'><b>selectCourseBscComputerScience</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-267533031" onClick='toggleBox("Output-267533031", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-257650296" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-257650296">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscComputerScience()'>
+				<b>selectCourseBscComputerScience</b><br>Test class: testSuite.KSGugCourseTests<br />
+				<a href="#Output-267533031"
+					onClick='toggleBox("Output-267533031", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-267533031" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-267533031">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscInformationTechnology()'><b>selectCourseBscInformationTechnology</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-553701447" onClick='toggleBox("Output-553701447", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-267533031" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-267533031">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscInformationTechnology()'>
+				<b>selectCourseBscInformationTechnology</b><br>Test class: testSuite.KSGugCourseTests<br />
+				<a href="#Output-553701447"
+					onClick='toggleBox("Output-553701447", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-553701447" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-553701447">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcomCA()'><b>selectCourseBcomCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-79092014" onClick='toggleBox("Output-79092014", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-553701447" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-553701447">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcomCA()'><b>selectCourseBcomCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-79092014"
+					onClick='toggleBox("Output-79092014", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-79092014" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-79092014">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscBT()'><b>selectCourseBscBT</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1940783703" onClick='toggleBox("Output-1940783703", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-79092014" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-79092014">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscBT()'><b>selectCourseBscBT</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1940783703"
+					onClick='toggleBox("Output-1940783703", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1940783703" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1940783703">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscCSHM()'><b>selectCourseBscCSHM</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-498627971" onClick='toggleBox("Output-498627971", this, "Show output", "Hide output");'>Show output</a>
+				<a href="#Output-1940783703" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1940783703">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscCSHM()'><b>selectCourseBscCSHM</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-498627971"
+					onClick='toggleBox("Output-498627971", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-498627971" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-498627971">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br/>
-</div>
-</td>
-<td></td>
-<td>1</td>
-<td>testSuite.KSGugCourseTests@2bf94401</td></tr>
-</table><p>
+				<a href="#Output-498627971" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-498627971">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. <br />
+				</div>
+			</td>
+			<td></td>
+			<td>1</td>
+			<td>testSuite.KSGugCourseTests@2bf94401</td>
+		</tr>
+	</table>
+	<p>
 </body>
+
 </html>

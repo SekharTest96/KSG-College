@@ -1,544 +1,671 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-  <meta charset='utf-8'>
-  <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="testng-reports.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type='text/javascript'>
-      google.load('visualization', '1', {packages:['table']});
-      google.setOnLoadCallback(drawTable);
-      var suiteTableInitFunctions = new Array();
-      var suiteTableData = new Array();
-    </script>
-    <!--
+<head>
+	<meta charset='utf-8'>
+	<title>TestNG reports</title>
+
+	<link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+	<link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false" />
+	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="testng-reports.js"></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script type='text/javascript'>
+		google.load('visualization', '1', {packages: ['table']});
+		google.setOnLoadCallback(drawTable);
+		var suiteTableInitFunctions = new Array();
+		var suiteTableData = new Array();
+	</script>
+	<!--
       <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
      -->
-  </head>
+</head>
 
-  <body>    <div class="top-banner-root">
-      <span class="top-banner-title-font">Test results</span>
-      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
-      <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
-    </div> <!-- top-banner-root -->
-    <div class="navigator-root">
-      <div class="navigator-suite-header">
-        <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
-          </img> <!-- collapse-all-icon -->
-        </a> <!-- collapse-all-link -->
-      </div> <!-- navigator-suite-header -->
-      <div class="suite">
-        <div class="rounded-window">
-          <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
-            </a> <!-- navigator-link -->
-          </div> <!-- suite-header light-rounded-window-top -->
-          <div class="navigator-suite-content">
-            <div class="suite-section-title">
-              <span>Info</span>
-            </div> <!-- suite-section-title -->
-            <div class="suite-section-content">
-              <ul>
-                <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--1495895191\testng-customsuite.xml</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>0 groups</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
-                    <span>Times</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
-                    <span>Reporter output</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
-                    <span>Ignored methods</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
-                    <span>Chronological view</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-              </ul>
-            </div> <!-- suite-section-content -->
-            <div class="result-section">
-              <div class="suite-section-title">
-                <span>Results</span>
-              </div> <!-- suite-section-title -->
-              <div class="suite-section-content">
-                <ul>
-                  <li>
-                    <span class="method-stats">14 methods, 5 failed,   9 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBaEL">selectCourseBaEL</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBbaCA">selectCourseBbaCA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscECS">selectCourseBscECS</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscMW">selectCourseBscMW</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscP">selectCourseBscP</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Default_suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBCA">selectCourseBCA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBcom">selectCourseBcom</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBcomCA">selectCourseBcomCA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBcomPA">selectCourseBcomPA</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscBT">selectCourseBscBT</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscCSHM">selectCourseBscCSHM</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscComputerScience">selectCourseBscComputerScience</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscInformationTechnology">selectCourseBscInformationTechnology</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testSuite.KSGugCourseTests" class="method navigator-link" hash-for-method="selectCourseBscM">selectCourseBscM</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
-                  </li>
-                </ul>
-              </div> <!-- suite-section-content -->
-            </div> <!-- result-section -->
-          </div> <!-- navigator-suite-content -->
-        </div> <!-- rounded-window -->
-      </div> <!-- suite -->
-    </div> <!-- navigator-root -->
-    <div class="wrapper">
-      <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testSuite.KSGugCourseTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBaEL">
-                  </a> <!-- selectCourseBaEL -->
-                  <span class="method-name">selectCourseBaEL</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
-  (Session info: chrome=119.0.6045.124)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@30c3ae63]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-	at pageLocatorsRepo.KSGUgCourse.checkBaEL(KSGUgCourse.java:335)
-	at testSuite.KSGugCourseTests.selectCourseBaEL(KSGugCourseTests.java:149)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<body>
+	<div class="top-banner-root">
+		<span class="top-banner-title-font">Test results</span>
+		<button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+		<br />
+		<span class="top-banner-font-1">1 suite, 5 failed tests</span>
+	</div> <!-- top-banner-root -->
+	<div class="navigator-root">
+		<div class="navigator-suite-header">
+			<span>All suites</span>
+			<a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+				<img src="collapseall.gif" class="collapse-all-icon">
+				</img> <!-- collapse-all-icon -->
+			</a> <!-- collapse-all-link -->
+		</div> <!-- navigator-suite-header -->
+		<div class="suite">
+			<div class="rounded-window">
+				<div class="suite-header light-rounded-window-top">
+					<a href="#" panel-name="suite-Default_suite" class="navigator-link">
+						<span class="suite-name border-failed">Default suite</span>
+					</a> <!-- navigator-link -->
+				</div> <!-- suite-header light-rounded-window-top -->
+				<div class="navigator-suite-content">
+					<div class="suite-section-title">
+						<span>Info</span>
+					</div> <!-- suite-section-title -->
+					<div class="suite-section-content">
+						<ul>
+							<li>
+								<a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+									<span>C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--1495895191\testng-customsuite.xml</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+									<span class="test-stats">1 test</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="group-Default_suite" class="navigator-link ">
+									<span>0 groups</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="times-Default_suite" class="navigator-link ">
+									<span>Times</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+									<span>Reporter output</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+									<span>Ignored methods</span>
+								</a> <!-- navigator-link  -->
+							</li>
+							<li>
+								<a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+									<span>Chronological view</span>
+								</a> <!-- navigator-link  -->
+							</li>
+						</ul>
+					</div> <!-- suite-section-content -->
+					<div class="result-section">
+						<div class="suite-section-title">
+							<span>Results</span>
+						</div> <!-- suite-section-title -->
+						<div class="suite-section-content">
+							<ul>
+								<li>
+									<span class="method-stats">14 methods, 5 failed, 9 passed</span>
+								</li>
+								<li>
+									<span class="method-list-title failed">Failed methods</span>
+									<span class="show-or-hide-methods failed">
+										<a href="#" panel-name="suite-Default_suite"
+											class="hide-methods failed suite-Default_suite"> (hide)</a>
+										<!-- hide-methods failed suite-Default_suite -->
+										<a href="#" panel-name="suite-Default_suite"
+											class="show-methods failed suite-Default_suite"> (show)</a>
+										<!-- show-methods failed suite-Default_suite -->
+									</span>
+									<div class="method-list-content failed suite-Default_suite">
+										<span>
+											<img src="failed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBaEL">selectCourseBaEL</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="failed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBbaCA">selectCourseBbaCA</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="failed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscECS">selectCourseBscECS</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="failed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscMW">selectCourseBscMW</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="failed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscP">selectCourseBscP</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+									</div> <!-- method-list-content failed suite-Default_suite -->
+								</li>
+								<li>
+									<span class="method-list-title passed">Passed methods</span>
+									<span class="show-or-hide-methods passed">
+										<a href="#" panel-name="suite-Default_suite"
+											class="hide-methods passed suite-Default_suite"> (hide)</a>
+										<!-- hide-methods passed suite-Default_suite -->
+										<a href="#" panel-name="suite-Default_suite"
+											class="show-methods passed suite-Default_suite"> (show)</a>
+										<!-- show-methods passed suite-Default_suite -->
+									</span>
+									<div class="method-list-content passed suite-Default_suite">
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBCA">selectCourseBCA</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBcom">selectCourseBcom</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBcomCA">selectCourseBcomCA</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBcomPA">selectCourseBcomPA</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscBT">selectCourseBscBT</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscCSHM">selectCourseBscCSHM</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscComputerScience">selectCourseBscComputerScience</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscInformationTechnology">selectCourseBscInformationTechnology</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+										<span>
+											<img src="passed.png" width="3%" />
+											<a href="#" panel-name="suite-Default_suite"
+												title="testSuite.KSGugCourseTests" class="method navigator-link"
+												hash-for-method="selectCourseBscM">selectCourseBscM</a>
+											<!-- method navigator-link -->
+										</span>
+										<br />
+									</div> <!-- method-list-content passed suite-Default_suite -->
+								</li>
+							</ul>
+						</div> <!-- suite-section-content -->
+					</div> <!-- result-section -->
+				</div> <!-- navigator-suite-content -->
+			</div> <!-- rounded-window -->
+		</div> <!-- suite -->
+	</div> <!-- navigator-root -->
+	<div class="wrapper">
+		<div class="main-panel-root">
+			<div panel-name="suite-Default_suite" class="panel Default_suite">
+				<div class="suite-Default_suite-class-failed">
+					<div class="main-panel-header rounded-window-top">
+						<img src="failed.png" />
+						<span class="class-name">testSuite.KSGugCourseTests</span>
+					</div> <!-- main-panel-header rounded-window-top -->
+					<div class="main-panel-content rounded-window-bottom">
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBaEL">
+								</a> <!-- selectCourseBaEL -->
+								<span class="method-name">selectCourseBaEL</span>
+								<div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element
+									not interactable: https://www.ksgcollege.com/ENGLISH.php has no size and location
+									(Session info: chrome=119.0.6045.124)
+									Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+									System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;,
+									os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+									Driver info: org.openqa.selenium.chrome.ChromeDriver
+									Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions
+									{actions=[org.openqa.selenium.interactions.Sequence@30c3ae63]}]
+									Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion:
+									119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e...,
+									userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true,
+									goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled:
+									false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+									ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true,
+									strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000,
+									script: 30000}, unhandledPromptBehavior: dismiss and notify,
+									webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+									webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+									webauthn:virtualAuthenticators: true}
+									Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
+									at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+									Method)
+									at
+									java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+									at
+									java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+									at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+									at
+									org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+									at
+									org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+									at
+									org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+									at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+									at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
+									at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+									at pageLocatorsRepo.KSGUgCourse.checkBaEL(KSGUgCourse.java:335)
+									at testSuite.KSGugCourseTests.selectCourseBaEL(KSGugCourseTests.java:149)
+									at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+									at
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+									at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+									at
+									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+									at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+									at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+									at
+									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+									at
+									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+									at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+									at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+									at org.testng.TestRunner.privateRun(TestRunner.java:848)
+									at org.testng.TestRunner.run(TestRunner.java:621)
+									at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+									at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+									at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+									at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+									at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+									at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+									at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+									at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+									at org.testng.TestNG.runSuites(TestNG.java:1114)
+									at org.testng.TestNG.run(TestNG.java:1082)
+									at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+									at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+									at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBbaCA">
-                  </a> <!-- selectCourseBbaCA -->
-                  <span class="method-name">selectCourseBbaCA</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable:  has no size and location
-  (Session info: chrome=119.0.6045.124)
-Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions {actions=[org.openqa.selenium.interactions.Sequence@e280403]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
-	at pageLocatorsRepo.KSGUgCourse.checkBbaCA(KSGUgCourse.java:357)
-	at testSuite.KSGugCourseTests.selectCourseBbaCA(KSGugCourseTests.java:159)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+								</div> <!-- stack-trace -->
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBbaCA">
+								</a> <!-- selectCourseBbaCA -->
+								<span class="method-name">selectCourseBbaCA</span>
+								<div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element
+									not interactable: has no size and location
+									(Session info: chrome=119.0.6045.124)
+									Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+									System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;,
+									os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+									Driver info: org.openqa.selenium.chrome.ChromeDriver
+									Command: [e9fc0a7b70c20a64fb1d2a97c841a022, actions
+									{actions=[org.openqa.selenium.interactions.Sequence@e280403]}]
+									Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion:
+									119.0.6045.124, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e...,
+									userDataDir: C:\Users\ADMIN\AppData\Loca...}, fedcm:accounts: true,
+									goog:chromeOptions: {debuggerAddress: localhost:54429}, networkConnectionEnabled:
+									false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp:
+									ws://localhost:54429/devtoo..., se:cdpVersion: 119.0.6045.124, setWindowRect: true,
+									strictFileInteractability: false, timeouts: {implicit: 60000, pageLoad: 300000,
+									script: 30000}, unhandledPromptBehavior: dismiss and notify,
+									webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true,
+									webauthn:extension:minPinLength: true, webauthn:extension:prf: true,
+									webauthn:virtualAuthenticators: true}
+									Session ID: e9fc0a7b70c20a64fb1d2a97c841a022
+									at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native
+									Method)
+									at
+									java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+									at
+									java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+									at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+									at
+									org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+									at
+									org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+									at
+									org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+									at
+									org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+									at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+									at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:693)
+									at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:598)
+									at pageLocatorsRepo.KSGUgCourse.checkBbaCA(KSGUgCourse.java:357)
+									at testSuite.KSGugCourseTests.selectCourseBbaCA(KSGugCourseTests.java:159)
+									at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+									at
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+									at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+									at
+									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+									at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+									at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+									at
+									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+									at
+									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+									at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+									at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+									at org.testng.TestRunner.privateRun(TestRunner.java:848)
+									at org.testng.TestRunner.run(TestRunner.java:621)
+									at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+									at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+									at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+									at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+									at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+									at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+									at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+									at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+									at org.testng.TestNG.runSuites(TestNG.java:1114)
+									at org.testng.TestNG.run(TestNG.java:1082)
+									at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+									at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+									at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscECS">
-                  </a> <!-- selectCourseBscECS -->
-                  <span class="method-name">selectCourseBscECS</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [ELECTRONICS AND COMMUNICATION
-SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pageLocatorsRepo.KSGUgCourse.checkBscECS(KSGUgCourse.java:295)
-	at testSuite.KSGugCourseTests.selectCourseBscECS(KSGugCourseTests.java:129)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+								</div> <!-- stack-trace -->
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscECS">
+								</a> <!-- selectCourseBscECS -->
+								<span class="method-name">selectCourseBscECS</span>
+								<div class="stack-trace">java.lang.AssertionError: expected [ELECTRONICS AND
+									COMMUNICATION
+									SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
+									at org.testng.Assert.fail(Assert.java:111)
+									at org.testng.Assert.failNotEquals(Assert.java:1578)
+									at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+									at org.testng.Assert.assertEquals(Assert.java:132)
+									at org.testng.Assert.assertEquals(Assert.java:656)
+									at org.testng.Assert.assertEquals(Assert.java:666)
+									at pageLocatorsRepo.KSGUgCourse.checkBscECS(KSGUgCourse.java:295)
+									at testSuite.KSGugCourseTests.selectCourseBscECS(KSGugCourseTests.java:129)
+									at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+									at
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+									at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+									at
+									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+									at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+									at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+									at
+									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+									at
+									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+									at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+									at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+									at org.testng.TestRunner.privateRun(TestRunner.java:848)
+									at org.testng.TestRunner.run(TestRunner.java:621)
+									at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+									at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+									at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+									at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+									at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+									at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+									at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+									at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+									at org.testng.TestNG.runSuites(TestNG.java:1114)
+									at org.testng.TestNG.run(TestNG.java:1082)
+									at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+									at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+									at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscMW">
-                  </a> <!-- selectCourseBscMW -->
-                  <span class="method-name">selectCourseBscMW</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Why Choose KSG?] but found [B.Sc Multimedia &amp; Webtechnology]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pageLocatorsRepo.KSGUgCourse.checkBscMW(KSGUgCourse.java:226)
-	at testSuite.KSGugCourseTests.selectCourseBscMW(KSGugCourseTests.java:101)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+								</div> <!-- stack-trace -->
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscMW">
+								</a> <!-- selectCourseBscMW -->
+								<span class="method-name">selectCourseBscMW</span>
+								<div class="stack-trace">java.lang.AssertionError: expected [Why Choose KSG?] but found
+									[B.Sc Multimedia &amp; Webtechnology]
+									at org.testng.Assert.fail(Assert.java:111)
+									at org.testng.Assert.failNotEquals(Assert.java:1578)
+									at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+									at org.testng.Assert.assertEquals(Assert.java:132)
+									at org.testng.Assert.assertEquals(Assert.java:656)
+									at org.testng.Assert.assertEquals(Assert.java:666)
+									at pageLocatorsRepo.KSGUgCourse.checkBscMW(KSGUgCourse.java:226)
+									at testSuite.KSGugCourseTests.selectCourseBscMW(KSGugCourseTests.java:101)
+									at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+									at
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+									at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+									at
+									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+									at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+									at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+									at
+									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+									at
+									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+									at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+									at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+									at org.testng.TestRunner.privateRun(TestRunner.java:848)
+									at org.testng.TestRunner.run(TestRunner.java:621)
+									at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+									at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+									at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+									at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+									at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+									at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+									at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+									at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+									at org.testng.TestNG.runSuites(TestNG.java:1114)
+									at org.testng.TestNG.run(TestNG.java:1082)
+									at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+									at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+									at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscP">
-                  </a> <!-- selectCourseBscP -->
-                  <span class="method-name">selectCourseBscP</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [COMMERCE WITH COMPUTER APPLICATIONS] but found [B.Sc Psychology]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at pageLocatorsRepo.KSGUgCourse.checkBscP(KSGUgCourse.java:389)
-	at testSuite.KSGugCourseTests.selectCourseBscP(KSGugCourseTests.java:169)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:848)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
-	at org.testng.TestNG.runSuites(TestNG.java:1114)
-	at org.testng.TestNG.run(TestNG.java:1082)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+								</div> <!-- stack-trace -->
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscP">
+								</a> <!-- selectCourseBscP -->
+								<span class="method-name">selectCourseBscP</span>
+								<div class="stack-trace">java.lang.AssertionError: expected [COMMERCE WITH COMPUTER
+									APPLICATIONS] but found [B.Sc Psychology]
+									at org.testng.Assert.fail(Assert.java:111)
+									at org.testng.Assert.failNotEquals(Assert.java:1578)
+									at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+									at org.testng.Assert.assertEquals(Assert.java:132)
+									at org.testng.Assert.assertEquals(Assert.java:656)
+									at org.testng.Assert.assertEquals(Assert.java:666)
+									at pageLocatorsRepo.KSGUgCourse.checkBscP(KSGUgCourse.java:389)
+									at testSuite.KSGugCourseTests.selectCourseBscP(KSGugCourseTests.java:169)
+									at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+									at
+									java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+									at
+									java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+									at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+									at
+									org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+									at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+									at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+									at
+									org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+									at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+									at
+									org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+									at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+									at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+									at org.testng.TestRunner.privateRun(TestRunner.java:848)
+									at org.testng.TestRunner.run(TestRunner.java:621)
+									at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+									at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+									at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+									at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+									at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+									at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+									at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+									at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+									at org.testng.TestNG.runSuites(TestNG.java:1114)
+									at org.testng.TestNG.run(TestNG.java:1082)
+									at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+									at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+									at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-          <div class="suite-Default_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testSuite.KSGugCourseTests</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBCA">
-                  </a> <!-- selectCourseBCA -->
-                  <span class="method-name">selectCourseBCA</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBcom">
-                  </a> <!-- selectCourseBcom -->
-                  <span class="method-name">selectCourseBcom</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBcomCA">
-                  </a> <!-- selectCourseBcomCA -->
-                  <span class="method-name">selectCourseBcomCA</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBcomPA">
-                  </a> <!-- selectCourseBcomPA -->
-                  <span class="method-name">selectCourseBcomPA</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscBT">
-                  </a> <!-- selectCourseBscBT -->
-                  <span class="method-name">selectCourseBscBT</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscCSHM">
-                  </a> <!-- selectCourseBscCSHM -->
-                  <span class="method-name">selectCourseBscCSHM</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscComputerScience">
-                  </a> <!-- selectCourseBscComputerScience -->
-                  <span class="method-name">selectCourseBscComputerScience</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscInformationTechnology">
-                  </a> <!-- selectCourseBscInformationTechnology -->
-                  <span class="method-name">selectCourseBscInformationTechnology</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectCourseBscM">
-                  </a> <!-- selectCourseBscM -->
-                  <span class="method-name">selectCourseBscM</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--1495895191\testng-customsuite.xml</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <pre>
+								</div> <!-- stack-trace -->
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+					</div> <!-- main-panel-content rounded-window-bottom -->
+				</div> <!-- suite-Default_suite-class-failed -->
+				<div class="suite-Default_suite-class-passed">
+					<div class="main-panel-header rounded-window-top">
+						<img src="passed.png" />
+						<span class="class-name">testSuite.KSGugCourseTests</span>
+					</div> <!-- main-panel-header rounded-window-top -->
+					<div class="main-panel-content rounded-window-bottom">
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBCA">
+								</a> <!-- selectCourseBCA -->
+								<span class="method-name">selectCourseBCA</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBcom">
+								</a> <!-- selectCourseBcom -->
+								<span class="method-name">selectCourseBcom</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBcomCA">
+								</a> <!-- selectCourseBcomCA -->
+								<span class="method-name">selectCourseBcomCA</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBcomPA">
+								</a> <!-- selectCourseBcomPA -->
+								<span class="method-name">selectCourseBcomPA</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscBT">
+								</a> <!-- selectCourseBscBT -->
+								<span class="method-name">selectCourseBscBT</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscCSHM">
+								</a> <!-- selectCourseBscCSHM -->
+								<span class="method-name">selectCourseBscCSHM</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscComputerScience">
+								</a> <!-- selectCourseBscComputerScience -->
+								<span class="method-name">selectCourseBscComputerScience</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscInformationTechnology">
+								</a> <!-- selectCourseBscInformationTechnology -->
+								<span class="method-name">selectCourseBscInformationTechnology</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+						<div class="method">
+							<div class="method-content">
+								<a name="selectCourseBscM">
+								</a> <!-- selectCourseBscM -->
+								<span class="method-name">selectCourseBscM</span>
+							</div> <!-- method-content -->
+						</div> <!-- method -->
+					</div> <!-- main-panel-content rounded-window-bottom -->
+				</div> <!-- suite-Default_suite-class-passed -->
+			</div> <!-- panel Default_suite -->
+			<div panel-name="test-xml-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span
+						class="header-content">C:\Users\ADMIN\AppData\Local\Temp\testng-eclipse--1495895191\testng-customsuite.xml</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
@@ -549,291 +676,307 @@ SYSTEMS (B.SC)] but found [ELECTRONICS AND COMMUNICATION SYSTEMS (B.SC)]
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
             </pre>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <ul>
-              <li>
-                <span class="test-name">Default test (1 class)</span>
-              </li>
-            </ul>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="times-div">
-              <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Number');
-data.addColumn('string', 'Method');
-data.addColumn('string', 'Class');
-data.addColumn('number', 'Time (ms)');
-data.addRows(14);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectCourseBCA')
-data.setCell(0, 2, 'testSuite.KSGugCourseTests')
-data.setCell(0, 3, 89392);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'selectCourseBscM')
-data.setCell(1, 2, 'testSuite.KSGugCourseTests')
-data.setCell(1, 3, 18478);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectCourseBscP')
-data.setCell(2, 2, 'testSuite.KSGugCourseTests')
-data.setCell(2, 3, 2404);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'selectCourseBscBT')
-data.setCell(3, 2, 'testSuite.KSGugCourseTests')
-data.setCell(3, 3, 1491);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'selectCourseBcomPA')
-data.setCell(4, 2, 'testSuite.KSGugCourseTests')
-data.setCell(4, 3, 1445);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'selectCourseBscComputerScience')
-data.setCell(5, 2, 'testSuite.KSGugCourseTests')
-data.setCell(5, 3, 1418);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'selectCourseBscCSHM')
-data.setCell(6, 2, 'testSuite.KSGugCourseTests')
-data.setCell(6, 3, 1159);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'selectCourseBcomCA')
-data.setCell(7, 2, 'testSuite.KSGugCourseTests')
-data.setCell(7, 3, 1119);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'selectCourseBcom')
-data.setCell(8, 2, 'testSuite.KSGugCourseTests')
-data.setCell(8, 3, 1097);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'selectCourseBscInformationTechnology')
-data.setCell(9, 2, 'testSuite.KSGugCourseTests')
-data.setCell(9, 3, 1084);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'selectCourseBscMW')
-data.setCell(10, 2, 'testSuite.KSGugCourseTests')
-data.setCell(10, 3, 920);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'selectCourseBscECS')
-data.setCell(11, 2, 'testSuite.KSGugCourseTests')
-data.setCell(11, 3, 833);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'selectCourseBaEL')
-data.setCell(12, 2, 'testSuite.KSGugCourseTests')
-data.setCell(12, 3, 308);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'selectCourseBbaCA')
-data.setCell(13, 2, 'testSuite.KSGugCourseTests')
-data.setCell(13, 3, 164);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
-return data;
-}
-              </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
-            </div> <!-- times-div -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBCA</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBcomPA</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscM</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBcom</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscComputerScience</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscInformationTechnology</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBcomCA</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscBT</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscCSHM</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscMW</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBbaCA</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscECS</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBscP</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">selectCourseBaEL</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Methods in chronological order</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
-              <div class="chronological-class-name">testSuite.KSGugCourseTests</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">openBrowser</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBCA</span>
-                <span class="method-start">195 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBcomCA</span>
-                <span class="method-start">90130 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBcomPA</span>
-                <span class="method-start">91786 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBscComputerScience</span>
-                <span class="method-start">93762 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBscInformationTechnology</span>
-                <span class="method-start">95697 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBcom</span>
-                <span class="method-start">97290 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">selectCourseBscMW</span>
-                <span class="method-start">98922 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBscBT</span>
-                <span class="method-start">100370 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBscCSHM</span>
-                <span class="method-start">102395 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">selectCourseBscECS</span>
-                <span class="method-start">104080 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">selectCourseBscM</span>
-                <span class="method-start">105125 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">selectCourseBaEL</span>
-                <span class="method-start">124158 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">selectCourseBbaCA</span>
-                <span class="method-start">124978 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">selectCourseBscP</span>
-                <span class="method-start">125643 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">flushReport</span>
-                <span class="method-start">128266 ms</span>
-              </div> <!-- configuration-test after -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-      </div> <!-- main-panel-root -->
-    </div> <!-- wrapper -->
-  </body>
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="testlist-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Tests for Default suite</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<ul>
+						<li>
+							<span class="test-name">Default test (1 class)</span>
+						</li>
+					</ul>
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="group-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Groups for Default suite</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="times-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Times for Default suite</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="times-div">
+						<script type="text/javascript">
+							suiteTableInitFunctions.push('tableData_Default_suite');
+							function tableData_Default_suite() {
+								var data = new google.visualization.DataTable();
+								data.addColumn('number', 'Number');
+								data.addColumn('string', 'Method');
+								data.addColumn('string', 'Class');
+								data.addColumn('number', 'Time (ms)');
+								data.addRows(14);
+								data.setCell(0, 0, 0)
+								data.setCell(0, 1, 'selectCourseBCA')
+								data.setCell(0, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(0, 3, 89392);
+								data.setCell(1, 0, 1)
+								data.setCell(1, 1, 'selectCourseBscM')
+								data.setCell(1, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(1, 3, 18478);
+								data.setCell(2, 0, 2)
+								data.setCell(2, 1, 'selectCourseBscP')
+								data.setCell(2, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(2, 3, 2404);
+								data.setCell(3, 0, 3)
+								data.setCell(3, 1, 'selectCourseBscBT')
+								data.setCell(3, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(3, 3, 1491);
+								data.setCell(4, 0, 4)
+								data.setCell(4, 1, 'selectCourseBcomPA')
+								data.setCell(4, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(4, 3, 1445);
+								data.setCell(5, 0, 5)
+								data.setCell(5, 1, 'selectCourseBscComputerScience')
+								data.setCell(5, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(5, 3, 1418);
+								data.setCell(6, 0, 6)
+								data.setCell(6, 1, 'selectCourseBscCSHM')
+								data.setCell(6, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(6, 3, 1159);
+								data.setCell(7, 0, 7)
+								data.setCell(7, 1, 'selectCourseBcomCA')
+								data.setCell(7, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(7, 3, 1119);
+								data.setCell(8, 0, 8)
+								data.setCell(8, 1, 'selectCourseBcom')
+								data.setCell(8, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(8, 3, 1097);
+								data.setCell(9, 0, 9)
+								data.setCell(9, 1, 'selectCourseBscInformationTechnology')
+								data.setCell(9, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(9, 3, 1084);
+								data.setCell(10, 0, 10)
+								data.setCell(10, 1, 'selectCourseBscMW')
+								data.setCell(10, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(10, 3, 920);
+								data.setCell(11, 0, 11)
+								data.setCell(11, 1, 'selectCourseBscECS')
+								data.setCell(11, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(11, 3, 833);
+								data.setCell(12, 0, 12)
+								data.setCell(12, 1, 'selectCourseBaEL')
+								data.setCell(12, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(12, 3, 308);
+								data.setCell(13, 0, 13)
+								data.setCell(13, 1, 'selectCourseBbaCA')
+								data.setCell(13, 2, 'testSuite.KSGugCourseTests')
+								data.setCell(13, 3, 164);
+								window.suiteTableData['Default_suite'] = {tableData: data, tableDiv: 'times-div-Default_suite'}
+								return data;
+							}
+						</script>
+						<span class="suite-total-time">Total running time: 2 minutes</span>
+						<div id="times-div-Default_suite">
+						</div> <!-- times-div-Default_suite -->
+					</div> <!-- times-div -->
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="reporter-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Reporter output for Default suite</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBCA</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBcomPA</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscM</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBcom</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscComputerScience</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscInformationTechnology</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBcomCA</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscBT</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscCSHM</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsSucess0.021670036820855776.jpeg is sucess. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscMW</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBbaCA</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscECS</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBscP</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+					<div class="reporter-method-div">
+						<span class="reporter-method-name">selectCourseBaEL</span>
+						<div class="reporter-method-output-div">
+							<span class="reporter-method-output">This test is failed. its screenshot is kept in
+								F:\KSGCollege\KSGAutomationTest\scrsFail1699806637766.png is failed. </span>
+						</div> <!-- reporter-method-output-div -->
+					</div> <!-- reporter-method-div -->
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="ignored-methods-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">0 ignored methods</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+				</div> <!-- main-panel-content rounded-window-bottom -->
+			</div> <!-- panel -->
+			<div panel-name="chronological-Default_suite" class="panel">
+				<div class="main-panel-header rounded-window-top">
+					<span class="header-content">Methods in chronological order</span>
+				</div> <!-- main-panel-header rounded-window-top -->
+				<div class="main-panel-content rounded-window-bottom">
+					<div class="chronological-class">
+						<div class="chronological-class-name">testSuite.KSGugCourseTests</div>
+						<!-- chronological-class-name -->
+						<div class="configuration-class before">
+							<span class="method-name">openBrowser</span>
+							<span class="method-start">0 ms</span>
+						</div> <!-- configuration-class before -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBCA</span>
+							<span class="method-start">195 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBcomCA</span>
+							<span class="method-start">90130 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBcomPA</span>
+							<span class="method-start">91786 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBscComputerScience</span>
+							<span class="method-start">93762 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBscInformationTechnology</span>
+							<span class="method-start">95697 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBcom</span>
+							<span class="method-start">97290 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<img src="failed.png">
+							</img>
+							<span class="method-name">selectCourseBscMW</span>
+							<span class="method-start">98922 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBscBT</span>
+							<span class="method-start">100370 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBscCSHM</span>
+							<span class="method-start">102395 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<img src="failed.png">
+							</img>
+							<span class="method-name">selectCourseBscECS</span>
+							<span class="method-start">104080 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<span class="method-name">selectCourseBscM</span>
+							<span class="method-start">105125 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<img src="failed.png">
+							</img>
+							<span class="method-name">selectCourseBaEL</span>
+							<span class="method-start">124158 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<img src="failed.png">
+							</img>
+							<span class="method-name">selectCourseBbaCA</span>
+							<span class="method-start">124978 ms</span>
+						</div> <!-- test-method -->
+						<div class="test-method">
+							<img src="failed.png">
+							</img>
+							<span class="method-name">selectCourseBscP</span>
+							<span class="method-start">125643 ms</span>
+						</div> <!-- test-method -->
+						<div class="configuration-test after">
+							<span class="method-name">flushReport</span>
+							<span class="method-start">128266 ms</span>
+						</div> <!-- configuration-test after -->
+					</div> <!-- main-panel-content rounded-window-bottom -->
+				</div> <!-- panel -->
+			</div> <!-- main-panel-root -->
+		</div> <!-- wrapper -->
+</body>
 <script type="text/javascript" src="testng-reports2.js"></script>
+
 </html>

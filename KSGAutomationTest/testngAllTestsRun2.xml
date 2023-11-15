@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite >
+<!DOCTYPE suite>
 <suite name="TestSuite">
-  <test thread-count="2" name="Test" parallel="classes">
-    <classes>
-      <class name="testSuite.OnlinePayementTestss"/>
-      <class name="testSuite.OnlineAdmissionTest"/>
-      <class name="testSuite.KSGugCourseTests"/>
-      <class name="testSuite.KSGPgcoursesTests"/>
-    </classes>
-  </test>
+	<test thread-count="2" name="Test" parallel="classes">
+		<classes>
+			<class name="testSuite.OnlinePayementTestss" />
+			<class name="testSuite.OnlineAdmissionTest" />
+			<class name="testSuite.KSGugCourseTests" />
+			<class name="testSuite.KSGPgcoursesTests" />
+		</classes>
+	</test>
 </suite>

@@ -40,15 +40,11 @@ public class KSGPgcoursesTests extends KSGExtentReports {
 	@Test(priority=1)
 	public void selectMaEl() {
 		
-		 reportConfig1(); 
+		
 		
 		  test =  CreateTest1("  Clicked on M.A English Literature . ").fail(" But it do not navigate to M.A English Literature  webpage. So Test is Failed. ");;
 		
 		course.hoverOnCourseAndPGCourseAndSelectMAel();
-		
-	
-
-		
 	
 	}
 	

@@ -1,90 +1,117 @@
 <html>
+
 <head>
-<title>TestNG:  Test</title>
-<link href="../testng.css" rel="stylesheet" type="text/css" />
-<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+	<title>TestNG: Test</title>
+	<link href="../testng.css" rel="stylesheet" type="text/css" />
+	<link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
-<style type="text/css">
-.log { display: none;} 
-.stack-trace { display: none;} 
-</style>
-<script type="text/javascript">
-<!--
-function flip(e) {
-  current = e.style.display;
-  if (current == 'block') {
-    e.style.display = 'none';
-    return 0;
-  }
-  else {
-    e.style.display = 'block';
-    return 1;
-  }
-}
+	<style type="text/css">
+		.log {
+			display: none;
+		}
 
-function toggleBox(szDivId, elem, msg1, msg2)
-{
-  var res = -1;  if (document.getElementById) {
-    res = flip(document.getElementById(szDivId));
-  }
-  else if (document.all) {
-    // this is the way old msie versions work
-    res = flip(document.all[szDivId]);
-  }
-  if(elem) {
-    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
-  }
-
-}
-
-function toggleAllBoxes() {
-  if (document.getElementsByTagName) {
-    d = document.getElementsByTagName('div');
-    for (i = 0; i < d.length; i++) {
-      if (d[i].className == 'log') {
-        flip(d[i]);
-      }
-    }
-  }
-}
-
-// -->
-</script>
+		.stack-trace {
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		<!--
+		function flip(e) {
+		  current = e.style.display;
+		  if (current == 'block') {
+			e.style.display = 'none';
+			return 0;
+		  }
+		  else {
+			e.style.display = 'block';
+			return 1;
+		  }
+		}
+		
+		function toggleBox(szDivId, elem, msg1, msg2)
+		{
+		  var res = -1;  if (document.getElementById) {
+			res = flip(document.getElementById(szDivId));
+		  }
+		  else if (document.all) {
+			// this is the way old msie versions work
+			res = flip(document.all[szDivId]);
+		  }
+		  if(elem) {
+			if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+		  }
+		
+		}
+		
+		function toggleAllBoxes() {
+		  if (document.getElementsByTagName) {
+			d = document.getElementsByTagName('div');
+			for (i = 0; i < d.length; i++) {
+			  if (d[i].className == 'log') {
+				flip(d[i]);
+			  }
+			}
+		  }
+		}
+		
+		// -->
+	</script>
 
 </head>
+
 <body>
-<h2 align='center'>Test</h2><table border='1' align="center">
-<tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/28/0</td>
-</tr><tr>
-<td>Started on:</td><td>Sun Nov 12 21:07:03 IST 2023</td>
-</tr>
-<tr><td>Total time:</td><td>322 seconds (322882 ms)</td>
-</tr><tr>
-<td>Included groups:</td><td></td>
-</tr><tr>
-<td>Excluded groups:</td><td></td>
-</tr>
-</table><p/>
-<small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcomCA()'><b>selectCourseBcomCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1198747443" onClick='toggleBox("Output-1198747443", this, "Show output", "Hide output");'>Show output</a>
+	<h2 align='center'>Test</h2>
+	<table border='1' align="center">
+		<tr>
+			<td>Tests passed/Failed/Skipped:</td>
+			<td>0/28/0</td>
+		</tr>
+		<tr>
+			<td>Started on:</td>
+			<td>Sun Nov 12 21:07:03 IST 2023</td>
+		</tr>
+		<tr>
+			<td>Total time:</td>
+			<td>322 seconds (322882 ms)</td>
+		</tr>
+		<tr>
+			<td>Included groups:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Excluded groups:</td>
+			<td></td>
+		</tr>
+	</table>
+	<p />
+	<small><i>(Hover the method name to see the test class name)</i></small>
+	<p />
+	<table width='100%' border='1' class='invocation-failed'>
+		<tr>
+			<td colspan='4' align='center'><b>FAILED TESTS</b></td>
+		</tr>
+		<tr>
+			<td><b>Test method</b></td>
+			<td><b>Attribute(s)</b></td>
+			<td width="30%"><b>Exception</b></td>
+			<td width="10%"><b>Time (seconds)</b></td>
+			<td><b>Instance</b></td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcomCA()'><b>selectCourseBcomCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1198747443"
+					onClick='toggleBox("Output-1198747443", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1198747443" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1198747443">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1198747443" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1198747443">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -158,8 +185,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198747443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1198747443'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1198747443", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1198747443'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -250,19 +281,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMPhilCS()'><b>selectMPhilCS</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-1812412359" onClick='toggleBox("Output-1812412359", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMPhilCS()'><b>selectMPhilCS</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-1812412359"
+					onClick='toggleBox("Output-1812412359", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1812412359" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1812412359">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1812412359" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1812412359">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -336,8 +375,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1812412359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1812412359'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1812412359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1812412359'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -427,19 +470,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.OnlinePayementTestss.OnlinePaymentTestWithValidInputs()'><b>OnlinePaymentTestWithValidInputs</b><br>Test class: testSuite.OnlinePayementTestss<br/>
-<a href="#Output-96757701" onClick='toggleBox("Output-96757701", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.OnlinePayementTestss.OnlinePaymentTestWithValidInputs()'>
+				<b>OnlinePaymentTestWithValidInputs</b><br>Test class: testSuite.OnlinePayementTestss<br />
+				<a href="#Output-96757701"
+					onClick='toggleBox("Output-96757701", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-96757701" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-96757701">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+				<a href="#Output-96757701" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-96757701">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -465,8 +516,12 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace96757701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace96757701'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+... Removed 21 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace96757701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace96757701'>
+					<pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -513,19 +568,27 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>2</td>
-<td>testSuite.OnlinePayementTestss@796065aa</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBaEL()'><b>selectCourseBaEL</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-210774678" onClick='toggleBox("Output-210774678", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>2</td>
+			<td>testSuite.OnlinePayementTestss@796065aa</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBaEL()'><b>selectCourseBaEL</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-210774678"
+					onClick='toggleBox("Output-210774678", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-210774678" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-210774678">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-210774678" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-210774678">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -599,8 +662,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace210774678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace210774678'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace210774678", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace210774678'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -691,19 +758,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.OnlinePayementTestss.OnlinePaymentTestwithInvalidInputs()'><b>OnlinePaymentTestwithInvalidInputs</b><br>Test class: testSuite.OnlinePayementTestss<br/>
-<a href="#Output-528561158" onClick='toggleBox("Output-528561158", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.OnlinePayementTestss.OnlinePaymentTestwithInvalidInputs()'>
+				<b>OnlinePaymentTestwithInvalidInputs</b><br>Test class: testSuite.OnlinePayementTestss<br />
+				<a href="#Output-528561158"
+					onClick='toggleBox("Output-528561158", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-528561158" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-528561158">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+				<a href="#Output-528561158" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-528561158">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -734,8 +809,12 @@ Caused by: java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
 	... 31 more
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace528561158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace528561158'><pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+... Removed 12 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace528561158", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace528561158'>
+					<pre>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -778,19 +857,28 @@ Caused by: java.util.concurrent.TimeoutException
 	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
 	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute0(JdkHttpClient.java:393)
 	... 31 more
-</pre></div></td>
-<td>181</td>
-<td>testSuite.OnlinePayementTestss@796065aa</td></tr>
-<tr>
-<td title='testSuite.OnlineAdmissionTest.OnlineAddmissionFormForRegistrationWithInvalidInputs()'><b>OnlineAddmissionFormForRegistrationWithInvalidInputs</b><br>Test class: testSuite.OnlineAdmissionTest<br/>
-<a href="#Output-1462214574" onClick='toggleBox("Output-1462214574", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>181</td>
+			<td>testSuite.OnlinePayementTestss@796065aa</td>
+		</tr>
+		<tr>
+			<td title='testSuite.OnlineAdmissionTest.OnlineAddmissionFormForRegistrationWithInvalidInputs()'>
+				<b>OnlineAddmissionFormForRegistrationWithInvalidInputs</b><br>Test class:
+				testSuite.OnlineAdmissionTest<br />
+				<a href="#Output-1462214574"
+					onClick='toggleBox("Output-1462214574", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1462214574" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1462214574">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+				<a href="#Output-1462214574" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1462214574">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -816,8 +904,12 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1462214574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1462214574'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+... Removed 21 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1462214574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1462214574'>
+					<pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -864,19 +956,27 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>61</td>
-<td>testSuite.OnlineAdmissionTest@38a1c423</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscECS()'><b>selectCourseBscECS</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1634024815" onClick='toggleBox("Output-1634024815", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>61</td>
+			<td>testSuite.OnlineAdmissionTest@38a1c423</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscECS()'><b>selectCourseBscECS</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1634024815"
+					onClick='toggleBox("Output-1634024815", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1634024815" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1634024815">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1634024815" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1634024815">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -950,8 +1050,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1634024815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1634024815'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1634024815", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1634024815'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1042,19 +1146,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscComputerScience()'><b>selectCourseBscComputerScience</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1069332083" onClick='toggleBox("Output-1069332083", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscComputerScience()'>
+				<b>selectCourseBscComputerScience</b><br>Test class: testSuite.KSGugCourseTests<br />
+				<a href="#Output-1069332083"
+					onClick='toggleBox("Output-1069332083", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1069332083" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1069332083">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1069332083" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1069332083">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1128,8 +1240,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069332083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1069332083'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1069332083", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1069332083'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1220,19 +1336,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMscIT()'><b>selectMscIT</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-464225466" onClick='toggleBox("Output-464225466", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMscIT()'><b>selectMscIT</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-464225466"
+					onClick='toggleBox("Output-464225466", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-464225466" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-464225466">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-464225466" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-464225466">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1306,8 +1430,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace464225466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace464225466'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace464225466", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace464225466'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1397,19 +1525,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMcom1B()'><b>selectMcom1B</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-1147433269" onClick='toggleBox("Output-1147433269", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMcom1B()'><b>selectMcom1B</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-1147433269"
+					onClick='toggleBox("Output-1147433269", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1147433269" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1147433269">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1147433269" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1147433269">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1483,8 +1619,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1147433269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1147433269'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1147433269", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1147433269'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1574,19 +1714,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscP()'><b>selectCourseBscP</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-623169905" onClick='toggleBox("Output-623169905", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscP()'><b>selectCourseBscP</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-623169905"
+					onClick='toggleBox("Output-623169905", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-623169905" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-623169905">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-623169905" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-623169905">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1660,8 +1808,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace623169905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace623169905'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace623169905", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace623169905'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1751,19 +1903,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcomPA()'><b>selectCourseBcomPA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1235980924" onClick='toggleBox("Output-1235980924", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcomPA()'><b>selectCourseBcomPA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1235980924"
+					onClick='toggleBox("Output-1235980924", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1235980924" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1235980924">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1235980924" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1235980924">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1837,8 +1997,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1235980924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1235980924'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1235980924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1235980924'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -1929,19 +2093,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMaEl()'><b>selectMaEl</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-565225964" onClick='toggleBox("Output-565225964", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMaEl()'><b>selectMaEl</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-565225964"
+					onClick='toggleBox("Output-565225964", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-565225964" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-565225964">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-565225964" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-565225964">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2015,8 +2187,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace565225964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace565225964'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace565225964", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace565225964'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2106,19 +2282,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscInformationTechnology()'><b>selectCourseBscInformationTechnology</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1844631085" onClick='toggleBox("Output-1844631085", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscInformationTechnology()'>
+				<b>selectCourseBscInformationTechnology</b><br>Test class: testSuite.KSGugCourseTests<br />
+				<a href="#Output-1844631085"
+					onClick='toggleBox("Output-1844631085", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1844631085" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1844631085">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1844631085" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1844631085">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2192,8 +2376,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1844631085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1844631085'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1844631085", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1844631085'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2284,19 +2472,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMphilTamil()'><b>selectMphilTamil</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-90767031" onClick='toggleBox("Output-90767031", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMphilTamil()'><b>selectMphilTamil</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-90767031"
+					onClick='toggleBox("Output-90767031", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-90767031" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-90767031">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-90767031" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-90767031">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2370,8 +2566,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace90767031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace90767031'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace90767031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace90767031'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2461,19 +2661,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscMW()'><b>selectCourseBscMW</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-382532653" onClick='toggleBox("Output-382532653", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscMW()'><b>selectCourseBscMW</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-382532653"
+					onClick='toggleBox("Output-382532653", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-382532653" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-382532653">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-382532653" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-382532653">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2547,8 +2755,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace382532653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace382532653'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace382532653", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace382532653'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2639,19 +2851,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBcom()'><b>selectCourseBcom</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1038440582" onClick='toggleBox("Output-1038440582", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBcom()'><b>selectCourseBcom</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1038440582"
+					onClick='toggleBox("Output-1038440582", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1038440582" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1038440582">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1038440582" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1038440582">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2725,8 +2945,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1038440582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1038440582'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1038440582", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1038440582'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2817,19 +3041,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMscM()'><b>selectMscM</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-294168299" onClick='toggleBox("Output-294168299", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMscM()'><b>selectMscM</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-294168299"
+					onClick='toggleBox("Output-294168299", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-294168299" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-294168299">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-294168299" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-294168299">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2903,8 +3135,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace294168299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace294168299'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace294168299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace294168299'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -2994,19 +3230,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBbaCA()'><b>selectCourseBbaCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-2133941914" onClick='toggleBox("Output-2133941914", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBbaCA()'><b>selectCourseBbaCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-2133941914"
+					onClick='toggleBox("Output-2133941914", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2133941914" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2133941914">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-2133941914" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-2133941914">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3080,8 +3324,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2133941914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2133941914'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace2133941914", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace2133941914'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3171,19 +3419,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.OnlinePayementTestss.emptyInputsTest()'><b>emptyInputsTest</b><br>Test class: testSuite.OnlinePayementTestss<br/>
-<a href="#Output-2142326813" onClick='toggleBox("Output-2142326813", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.OnlinePayementTestss.emptyInputsTest()'><b>emptyInputsTest</b><br>Test class:
+				testSuite.OnlinePayementTestss<br />
+				<a href="#Output-2142326813"
+					onClick='toggleBox("Output-2142326813", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2142326813" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2142326813">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#firstname&quot;}
+				<a href="#Output-2142326813" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-2142326813">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#firstname&quot;}
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -3211,8 +3467,12 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2142326813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2142326813'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#firstname&quot;}
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace2142326813", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace2142326813'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#firstname&quot;}
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -3257,19 +3517,27 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>121</td>
-<td>testSuite.OnlinePayementTestss@796065aa</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscCSHM()'><b>selectCourseBscCSHM</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-86096272" onClick='toggleBox("Output-86096272", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>121</td>
+			<td>testSuite.OnlinePayementTestss@796065aa</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscCSHM()'><b>selectCourseBscCSHM</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-86096272"
+					onClick='toggleBox("Output-86096272", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-86096272" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-86096272">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-86096272" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-86096272">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3343,8 +3611,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace86096272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace86096272'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace86096272", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace86096272'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3435,19 +3707,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMcomCA()'><b>selectMcomCA</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-176055053" onClick='toggleBox("Output-176055053", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMcomCA()'><b>selectMcomCA</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-176055053"
+					onClick='toggleBox("Output-176055053", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-176055053" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-176055053">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-176055053" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-176055053">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3521,8 +3801,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace176055053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace176055053'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace176055053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace176055053'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3612,19 +3896,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBCA()'><b>selectCourseBCA</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-173234666" onClick='toggleBox("Output-173234666", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBCA()'><b>selectCourseBCA</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-173234666"
+					onClick='toggleBox("Output-173234666", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-173234666" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-173234666">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>java.lang.IllegalArgumentException: Driver must be set
+				<a href="#Output-173234666" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-173234666">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>java.lang.IllegalArgumentException: Driver must be set
 	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
 	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:58)
 	at pageLocatorsRepo.KSGUgCourse.hoverOnCourseAndUGCourse(KSGUgCourse.java:57)
@@ -3632,8 +3924,12 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173234666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace173234666'><pre>java.lang.IllegalArgumentException: Driver must be set
+... Removed 12 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace173234666", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace173234666'>
+					<pre>java.lang.IllegalArgumentException: Driver must be set
 	at org.openqa.selenium.internal.Require.nonNull(Require.java:60)
 	at org.openqa.selenium.interactions.Actions.&lt;init&gt;(Actions.java:58)
 	at pageLocatorsRepo.KSGUgCourse.hoverOnCourseAndUGCourse(KSGUgCourse.java:57)
@@ -3653,19 +3949,27 @@ This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\s
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscM()'><b>selectCourseBscM</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-1137302514" onClick='toggleBox("Output-1137302514", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscM()'><b>selectCourseBscM</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-1137302514"
+					onClick='toggleBox("Output-1137302514", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1137302514" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1137302514">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1137302514" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1137302514">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3739,8 +4043,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1137302514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1137302514'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1137302514", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1137302514'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3831,19 +4139,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectPhdCS()'><b>selectPhdCS</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-931114244" onClick='toggleBox("Output-931114244", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectPhdCS()'><b>selectPhdCS</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-931114244"
+					onClick='toggleBox("Output-931114244", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-931114244" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-931114244">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-931114244" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-931114244">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -3917,8 +4233,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931114244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace931114244'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace931114244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace931114244'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -4008,19 +4328,28 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-<tr>
-<td title='testSuite.OnlineAdmissionTest.OnlineAddmissionFormForRegistrationWithValidInputs()'><b>OnlineAddmissionFormForRegistrationWithValidInputs</b><br>Test class: testSuite.OnlineAdmissionTest<br/>
-<a href="#Output-770188886" onClick='toggleBox("Output-770188886", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+		<tr>
+			<td title='testSuite.OnlineAdmissionTest.OnlineAddmissionFormForRegistrationWithValidInputs()'>
+				<b>OnlineAddmissionFormForRegistrationWithValidInputs</b><br>Test class:
+				testSuite.OnlineAdmissionTest<br />
+				<a href="#Output-770188886"
+					onClick='toggleBox("Output-770188886", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-770188886" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-770188886">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;rd1&quot;]&quot;}
+				<a href="#Output-770188886" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-770188886">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;rd1&quot;]&quot;}
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -4057,8 +4386,12 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace770188886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace770188886'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;rd1&quot;]&quot;}
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace770188886", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace770188886'>
+					<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&quot;rd1&quot;]&quot;}
   (Session info: chrome=119.0.6045.124)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
@@ -4112,19 +4445,27 @@ Session ID: 8c98ec5c24c9cac68b06905c6d4cc198
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:840)
-</pre></div></td>
-<td>62</td>
-<td>testSuite.OnlineAdmissionTest@38a1c423</td></tr>
-<tr>
-<td title='testSuite.KSGugCourseTests.selectCourseBscBT()'><b>selectCourseBscBT</b><br>Test class: testSuite.KSGugCourseTests<br/>
-<a href="#Output-153511321" onClick='toggleBox("Output-153511321", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>62</td>
+			<td>testSuite.OnlineAdmissionTest@38a1c423</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGugCourseTests.selectCourseBscBT()'><b>selectCourseBscBT</b><br>Test class:
+				testSuite.KSGugCourseTests<br />
+				<a href="#Output-153511321"
+					onClick='toggleBox("Output-153511321", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-153511321" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-153511321">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-153511321" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-153511321">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -4198,8 +4539,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace153511321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace153511321'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 17 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace153511321", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace153511321'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -4290,19 +4635,27 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 52 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGugCourseTests@38eb2fb0</td></tr>
-<tr>
-<td title='testSuite.KSGPgcoursesTests.selectMscB()'><b>selectMscB</b><br>Test class: testSuite.KSGPgcoursesTests<br/>
-<a href="#Output-1261074389" onClick='toggleBox("Output-1261074389", this, "Show output", "Hide output");'>Show output</a>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGugCourseTests@38eb2fb0</td>
+		</tr>
+		<tr>
+			<td title='testSuite.KSGPgcoursesTests.selectMscB()'><b>selectMscB</b><br>Test class:
+				testSuite.KSGPgcoursesTests<br />
+				<a href="#Output-1261074389"
+					onClick='toggleBox("Output-1261074389", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1261074389" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1261074389">
-This test is failed. its screenshot is kept in F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+				<a href="#Output-1261074389" onClick="toggleAllBoxes();">Show all outputs</a>
+				<div class='log' id="Output-1261074389">
+					This test is failed. its screenshot is kept in
+					F:\KSGCollege\KSGAutomationTest\scrsFail1699803417524.png is failed. <br />
+				</div>
+			</td>
+			<td>
+				<div>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -4376,8 +4729,12 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1261074389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1261074389'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+... Removed 16 stack frames</pre>
+				</div><a href='#'
+					onClick='toggleBox("stack-trace1261074389", this, "Click to show all stack frames", "Click to hide stack frames")'>Click
+					to show all stack frames</a>
+				<div class='stack-trace' id='stack-trace1261074389'>
+					<pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
@@ -4467,9 +4824,14 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
 	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
 	... 51 more
-</pre></div></td>
-<td>0</td>
-<td>testSuite.KSGPgcoursesTests@7351a16e</td></tr>
-</table><p>
+</pre>
+				</div>
+			</td>
+			<td>0</td>
+			<td>testSuite.KSGPgcoursesTests@7351a16e</td>
+		</tr>
+	</table>
+	<p>
 </body>
+
 </html>

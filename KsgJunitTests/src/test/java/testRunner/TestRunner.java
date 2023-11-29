@@ -6,10 +6,12 @@ import org.junit.runners.Suite.SuiteClasses;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import stepDefinitions.CollegeModule;
 import stepDefinitions.KSGonlineAdmissionForm;
 import stepDefinitions.KSGonlinePaymentTest;
 import stepDefinitions.KSGpgCourseDetails;
 import stepDefinitions.KSGugCoursesTest;
+import stepDefinitions.PlacementModule;
 import utilities.TestListnersss;
 
 
@@ -20,9 +22,11 @@ import utilities.TestListnersss;
 	KSGonlineAdmissionForm.class,
 	KSGpgCourseDetails.class,
 	KSGugCoursesTest.class,
+	CollegeModule.class,
+	PlacementModule.class
 })
 @CucumberOptions(
-		 monochrome = true,
+		
 		features = "src\\test\\java\\KSGFeatureFiles",
 		glue = {"stepDefinitions", "utilities", "testReports","constants",  "KsgJunitTests"},
 		plugin = {"pretty", "html:target\\cucumber-Junit-reports\\JunitTest.html"}

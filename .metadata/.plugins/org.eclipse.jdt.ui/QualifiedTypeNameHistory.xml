@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="org.openqa.selenium.JavascriptExecutor"/>
-    <fullyQualifiedTypeName name="java.time.Duration"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.Alert"/>
-    <fullyQualifiedTypeName name="org.testng.Assert"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.TakesScreenshot"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.OutputType"/>
     <fullyQualifiedTypeName name="org.apache.commons.io.FileUtils"/>
@@ -36,7 +25,6 @@
     <fullyQualifiedTypeName name="pageLocatorsRepo.KSGonlineAdmissionRepo"/>
     <fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
     <fullyQualifiedTypeName name="pageLocatorsRepo.KSGPgcourses"/>
-    <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
     <fullyQualifiedTypeName name="pageLocatorsRepo.KSGUgCourse"/>
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
     <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
@@ -50,7 +38,6 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
     <fullyQualifiedTypeName name="utilities.TestListnersss"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
-    <fullyQualifiedTypeName name="utilities.DriversInit"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
@@ -58,6 +45,19 @@
     <fullyQualifiedTypeName name="stepDefinitions.KSGonlinePaymentTest"/>
     <fullyQualifiedTypeName name="stepDefinitions.KSGpgCourseDetails"/>
     <fullyQualifiedTypeName name="stepDefinitions.KSGugCoursesTest"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestMethodOrder"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.TestClassOrder"/>
+    <fullyQualifiedTypeName name="pageLocatorsRepo.CollegeModuleRepo"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
+    <fullyQualifiedTypeName name="stepDefinitions.CollegeModule"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.How"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+    <fullyQualifiedTypeName name="stepDefinitions.PlacementModule"/>
+    <fullyQualifiedTypeName name="utilities.DriversInit"/>
+    <fullyQualifiedTypeName name="pageLocatorsRepo.PlacementModuleRepo"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.TestMethodOrder"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer"/>
 </qualifiedTypeNameHistroy>

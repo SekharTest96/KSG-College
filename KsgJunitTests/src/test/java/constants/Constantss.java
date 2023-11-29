@@ -19,4 +19,8 @@ public class Constantss {
 	
 	public static final String extntReportPgCourse = "F:\\KSGCollege\\KsgJunitTests\\target\\ExtentReports\\ExtentPgCourseReport.html";
 	public static final String extntReportUgCourse = "F:\\KSGCollege\\KsgJunitTests\\target\\ExtentReports\\ExtentUgCourseReport.html";
+	
+	public static final String extntReportCollegeModule = "F:\\KSGCollege\\KsgJunitTests\\target\\ExtentReports\\ExtentCollegeModuleReport.html";
+	public static final String extntReportPlacementModule = "F:\\KSGCollege\\KsgJunitTests\\target\\ExtentReports\\ExtentPlacementModuleReport.html";
+	
 }

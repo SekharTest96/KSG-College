@@ -1,34 +1,28 @@
-package stepDefinitions;
+package testSuite;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.CollegeModuleRepo;
 import pageLocatorsRepo.KSGPgcourses;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class KSGpgCourseDetails extends KSGExtentReports {
 
 	KSGPgcourses pg = new KSGPgcourses(DriversInit.getDriver());
 
-	@BeforeAll
+	@BeforeSuite
 	public static void openBrowser() {
 		reportPg();
 
 	}
 
-	@Test
-	 @Order(1)
+	@Test(priority=1)
 	@Given("Website launched with given url")
 	public void website_launched_with_given_url() {
 
@@ -41,8 +35,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		System.out.println(" ");
 	}
 
-	@Test
-	 @Order(2)
+	@Test(priority=2)
 	@Then("hover on Courses, hover on pg course and select MA English Literature")
 	public void hover_on_courses_hover_on_pg_course_and_select_ma_english_literature() {
 		test = CreateTest("  Clicked on M.A English Literature . ")
@@ -52,8 +45,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.hoverOnCourseAndPGCourseAndSelectMAel();
 	}
 
-	@Test
-	 @Order(3)
+	@Test(priority=3)
 	@Then("hover on Courses, hover on pg course and select MSC Information Technology")
 	public void hover_on_courses_hover_on_pg_course_and_select_msc_information_technology() {
 
@@ -63,8 +55,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMscIT();
 	}
 
-	@Test
-	 @Order(4)
+	@Test(priority=4)
 	@Then("hover on Courses, hover on pg course and select Msc Mathematics")
 	public void hover_on_courses_hover_on_pg_course_and_select_msc_mathematics() {
 		test = CreateTest(" Clicked on M.Sc Mathematics . ");
@@ -73,8 +64,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMscM();
 	}
 
-	@Test
-	 @Order(5)
+	@Test(priority=5)
 	@Then("hover on Courses, hover on pg course and select Msc Bio Technology")
 	public void hover_on_courses_hover_on_pg_course_and_select_msc_bio_technology() {
 
@@ -85,8 +75,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMscB();
 	}
 
-	@Test
-	 @Order(6)
+	@Test(priority=6)
 	@Then("hover on Courses, hover on pg course and select M.Com \\(CA)")
 	public void hover_on_courses_hover_on_pg_course_and_select_m_com_ca() {
 		test = CreateTest(" Clicked on M.Com (CA) . ");
@@ -95,8 +84,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMcomCA();
 	}
 
-	@Test
-	 @Order(7)
+	@Test(priority=7)
 	@Then("hover on Courses, hover on pg course and select M.Com \\(IB)")
 	public void hover_on_courses_hover_on_pg_course_and_select_m_com_ib() {
 
@@ -106,8 +94,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMcom1B();
 	}
 
-	@Test
-	 @Order(8)
+	@Test(priority=8)
 	@Then("hover on Courses, hover on pg course and select MPhil Tamil")
 	public void hover_on_courses_hover_on_pg_course_and_select_m_phil_tamil() {
 
@@ -117,8 +104,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMphilTamil();
 	}
 
-	@Test
-	 @Order(9)
+	@Test(priority=9)
 	@Then("hover on Courses, hover on pg course and select MPhil Computer Science")
 	public void hover_on_courses_hover_on_pg_course_and_select_m_phil_computer_science() {
 
@@ -128,8 +114,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 		pg.checkMPhilCS();
 	}
 
-	@Test
-	 @Order(10)
+	@Test(priority=10)
 	@Then("hover on Courses, hover on pg course and select Ph.D Computer Science")
 	public void hover_on_courses_hover_on_pg_course_and_select_ph_d_computer_science() {
 
@@ -140,7 +125,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	}
 
 	
-	@AfterAll
+	@AfterSuite
 	public static void closeBrowser() {
 		flushTest();
 		DriversInit.quitDriver();

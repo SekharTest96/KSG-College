@@ -1,29 +1,24 @@
-package stepDefinitions;
+package testSuite;
+
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentTest;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
-
-import com.aventstack.extentreports.ExtentTest;
+import pageLocatorsRepo.CollegeModuleRepo;
 import pageLocatorsRepo.OnlinePaymentRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
-
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	OnlinePaymentRepo pay = new OnlinePaymentRepo(DriversInit.getDriver());
 
-	@BeforeAll
+	@BeforeSuite
 	public static void openBrowser() {
 		reportPay();
 		
@@ -31,8 +26,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 	}
 	
 	
-	@Test
-	 @Order(1)
+	@Test(priority=1)
 	@Given("Website launched with the URL")
 	public void website_launched_with_the_url() {
 		
@@ -43,8 +37,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		System.out.println("Given Website is launched with the provided url. ");
 	}
 
-	@Test
-	 @Order(2)
+	@Test(priority=2)
 	@Then("navigated to Online Payment and clicked on it")
 	public void navigated_to_online_payment_and_clicked_on_it() {
 		
@@ -55,8 +48,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		pay.clickOnlinePayment();
 	}
 
-	@Test
-	 @Order(3)
+	@Test(priority=3)
 	@Then("Entered Valid details and clicked on pay")
 	public void entered_valid_details_and_clicked_on_pay() {
 		
@@ -68,8 +60,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	}
 
-	@Test
-	 @Order(4)
+	@Test(priority=4)
 	@Then("Entered valid card details")
 	public void entered_valiid_card_details() {
 	
@@ -80,8 +71,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		pay.enterValidDetailsForOnlinePayment();
 	}
 
-	@Test
-	 @Order(5)
+	@Test(priority=5)
 	@Then("Entered Invalid details and clicked on pay")
 	public void entered_invalid_details_and_clicked_on_pay() {
 		
@@ -91,8 +81,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		System.out.println("Entered Invalid Details and clicked on pay");
 	}
 
-	@Test
-	 @Order(6)
+	@Test(priority=6)
 	@Then("Entered Invaliid card details")
 	public void entered_invaliid_card_details() {
 
@@ -103,8 +92,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		pay.enterInvalidDetailsForOnlinePayment();
 	}
 
-	@Test
-	 @Order(7)
+	@Test(priority=7)
 	@Then("Entered no details and clicked on pay")
 	public void entered_no_details_and_clicked_on_pay() {
 		
@@ -115,8 +103,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 		System.out.println("Entered no details (no data - empty input) and clicked on pay");
 	}
 
-	@Test
-	 @Order(8)
+	@Test(priority=8)
 	@Then("Entered no card details")
 	public void entered_no_card_details() {
 		
@@ -128,8 +115,8 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	
 	
-	@AfterAll
-	public static void FlushReport() {
+	@AfterSuite
+	public  void FlushReport() {
 		flushTest();
 		DriversInit.quitDriver();
 	}

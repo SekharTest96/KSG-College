@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite >
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testSuite.PlacementModule"/>
+      <class name="testSuite.KSGpgCourseDetails"/>
+      <class name="testSuite.CollegeModule"/>
+      <class name="testSuite.KSGugCoursesTest"/>
+      <class name="testSuite.KSGonlineAdmissionForm"/>
+      <class name="testSuite.KSGServiceModule"/>
+      <class name="testSuite.KSGonlinePaymentTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

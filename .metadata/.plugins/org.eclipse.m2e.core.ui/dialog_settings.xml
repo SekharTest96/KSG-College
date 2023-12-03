@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\KSGCollege\KsgJunitTests"/>
 			<item value="F:\KSGCollege\KSGAutomationTest\src\test\java\testSuite\KSGugCourseTests.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,6 +27,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="Com.KSG.KsgTestNGTests"/>
 			<item value="Com.KSG.KsgJunitTests"/>
 			<item value="Com.KSG.KSGAutomationTest"/>
 			<item value="Com.KSG.ksgautomation"/>
@@ -34,6 +36,7 @@
 			<item value="Com.KSG"/>
 		</list>
 		<list key="artifactId">
+			<item value="KsgTestNGTests"/>
 			<item value="KsgJunitTests"/>
 			<item value="KSGAutomationTest"/>
 			<item value="ksgautomation"/>

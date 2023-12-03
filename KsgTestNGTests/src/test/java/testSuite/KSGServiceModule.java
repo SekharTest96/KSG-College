@@ -1,36 +1,27 @@
-package stepDefinitions;
+package testSuite;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageLocatorsRepo.KSGServiceModuleRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class KSGServiceModule extends KSGExtentReports {
 
 	
 	KSGServiceModuleRepo service = new KSGServiceModuleRepo(DriversInit.getDriver());
 	
-	@BeforeAll
-	public static void beforeTests() {
+	@BeforeSuite
+	public  void beforeTests() {
 		reportService();
 		System.out.println("Report Reg of extent started.. ");
 
 	}
 
-	@Test
-	@Order(1)
+	@Test(priority=1)
 	@Given("Website launched with the url")
 
 	public void website_launched_with_the_url() {
@@ -43,8 +34,7 @@ public class KSGServiceModule extends KSGExtentReports {
 	}
 	
 	
-	@Test
-	@Order(2)
+	@Test(priority=2)
 	@Then("Hover on Service and click on Scholarships")
 	public void Hover_on_Placement_and_click_on_Scholarships() {
 		
@@ -55,8 +45,7 @@ public class KSGServiceModule extends KSGExtentReports {
 		
 	}
 	
-	@Test
-	@Order(3)
+	@Test(priority=3)
 	@Then("Hover on Service and click on Prof Subbiah Yoga Centre")
 	public void Hover_on_Placement_and_click_on_Prof_Subbiah_Yoga_Centre() {
 		
@@ -65,8 +54,7 @@ public class KSGServiceModule extends KSGExtentReports {
 		service.hoverOnServiceAndSelectyoga1();
 	}
 	
-	@Test
-	@Order(4)
+	@Test(priority=4)
 	@Then("Hover on Service and click on Group Insurance")
 	public void Hover_on_Placement_and_click_on_Group_Insurance() {
 		
@@ -75,8 +63,7 @@ public class KSGServiceModule extends KSGExtentReports {
 		service.hoverOnServiceAndSelectGroupInsurance();
 	}
 	
-	@Test
-	@Order(5)
+	@Test(priority=5)
 	@Then("Hover on Service and click on Research Programme")
 	public void Hover_on_Placement_and_click_on_Research_Programme() {
 		
@@ -85,8 +72,7 @@ public class KSGServiceModule extends KSGExtentReports {
 		service.hoverOnServiceAndSelectResearchProgramme();
 	}
 	
-	@Test
-	@Order(6)
+	@Test(priority=6)
 	@Then("Hover on Service and click on  UOW")
 	public void Hover_on_Placement_and_click_on_UOW() {
 		
@@ -98,7 +84,7 @@ public class KSGServiceModule extends KSGExtentReports {
 	
 	
 	
-	@AfterAll
+	@AfterSuite
 	public static void FlushReport() {
 		flushTest();
 		DriversInit.quitDriver();

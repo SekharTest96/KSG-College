@@ -1,29 +1,22 @@
-package stepDefinitions;
+package testSuite;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+
+
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageLocatorsRepo.KSGonlineAdmissionRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
-
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class KSGonlineAdmissionForm extends KSGExtentReports{
 	
 	
 	KSGonlineAdmissionRepo reg = new KSGonlineAdmissionRepo(DriversInit.getDriver());
 
-	@BeforeAll
+	@BeforeSuite
 	public static void beforeTests() {
 		reportReg();
 			System.out.println("Report Reg of extent started.. ");
@@ -31,8 +24,8 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	}
 	
 	
-	@Test
-	 @Order(1)
+	@Test(priority=1)
+	
 	@Given("Website launched with the url")
 	
 	public void website_launched_with_the_url() {
@@ -45,8 +38,7 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	}
 
 
-	@Test
-	 @Order(2)
+	@Test(priority=2)
 	@Then("hover on online admission open form and click on it")
 	public void hover_on_online_admission_open_form_and_click_on_it() {
 		test =  CreateTest("hover on online admission open form and click on it");
@@ -57,8 +49,7 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 
 	
 
-	@Test
-	 @Order(3)
+	@Test(priority=3)
 	@Then("enter the valid data as input and submit the form")
 	public void enter_the_valid_data_as_input_and_submit_the_form() throws InterruptedException {
 		test =  CreateTest("Onine Admission form filling  With Valid Inputs.");
@@ -68,8 +59,7 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 
 	
 
-	@Test
-	 @Order(4)
+	@Test(priority=4)
 	@Then("enter the Invalid data as input and submit the form")
 	public void enter_the_invalid_data_as_input_and_submit_the_form() throws InterruptedException {
 	   
@@ -80,8 +70,8 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	}
 	
 	
-	@AfterAll
-	public static void closeBrowser() {
+	@AfterSuite
+	public  void closeBrowser() {
 		flushTest();
 		DriversInit.quitDriver();
 	}

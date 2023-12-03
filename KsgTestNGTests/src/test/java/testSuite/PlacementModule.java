@@ -1,35 +1,28 @@
-package stepDefinitions;
+package testSuite;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageLocatorsRepo.PlacementModuleRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
-
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class PlacementModule extends KSGExtentReports {
 
 	PlacementModuleRepo placement = new PlacementModuleRepo(DriversInit.getDriver());
 	
-	@BeforeAll
+	@BeforeSuite
 	public static void beforeTests() {
 		reportPlacement();
 		System.out.println("Report Reg of extent started.. ");
 
 	}
 
-	@Test
-	@Order(1)
+	@Test(priority=1)
 	@Given("Website launched with the url")
 
 	public void website_launched_with_the_url() {
@@ -41,8 +34,7 @@ public class PlacementModule extends KSGExtentReports {
 		System.out.println("");
 	}
 	
-	@Test
-	@Order(2)
+	@Test(priority=2)
 	@Then("Hover on Placement and click on Placement Cell")
 	public void Hover_on_Placement_and_click_on_Placement_Cell() {
 		
@@ -52,8 +44,7 @@ public class PlacementModule extends KSGExtentReports {
 	}
 	
 	
-	@Test
-	@Order(3)
+	@Test(priority=3)
 	@Then("Hover on Placement and click on Placement Office")
 	public void Hover_on_Placement_and_click_on_Placement_Office() {
 		
@@ -62,8 +53,7 @@ public class PlacementModule extends KSGExtentReports {
 		placement.hoverOnPlacementAndSelectPlacementOffice();
 	}
 	
-	@Test
-	@Order(4)
+	@Test(priority=4)
 	@Then("Hover on Placement and click on Activities")
 	public void Hover_on_Placement_and_click_on_Activities() {
 		
@@ -72,8 +62,7 @@ public class PlacementModule extends KSGExtentReports {
 		placement.hoverOnPlacementAndSelectPlacementActivities();
 	}
 	
-	@Test
-	@Order(5)
+	@Test(priority=4)
 	@Then("Hover on Placement and click on Companies")
 	public void Hover_on_Placement_and_click_on_Companies() {
 		
@@ -82,8 +71,7 @@ public class PlacementModule extends KSGExtentReports {
 		placement.hoverOnPlacementAndSelectPlacementCell();
 	}
 	
-	@Test
-	@Order(6)
+	@Test(priority=5)
 	@Then("Hover on Placement and click on Career")
 	public void Hover_on_Placement_and_click_on_Career() {
 		
@@ -93,7 +81,7 @@ public class PlacementModule extends KSGExtentReports {
 	}
 
 	
-	@AfterAll
+	@AfterSuite
 	public static void FlushReport() {
 		flushTest();
 		DriversInit.quitDriver();

@@ -1,37 +1,28 @@
-package stepDefinitions;
+package testSuite;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pageLocatorsRepo.CollegeModuleRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
-import utilities.TestListnersss;
 
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-@ExtendWith(TestListnersss.class)
 public class CollegeModule extends KSGExtentReports {
 
 	CollegeModuleRepo college = new CollegeModuleRepo(DriversInit.getDriver());
 
-	@BeforeAll
-	public static void beforeTests() {
+	@BeforeSuite
+	public void beforeTests() {
 		reportCM();
 		System.out.println("Report Reg of extent started.. ");
 
 	}
 
-	@Test
-	@Order(1)
+	@Test(priority=1)
 	@Given("Website launched with the url")
-
 	public void website_launched_with_the_url() {
 		test = CreateTest("Website launched with the url");
 		test.pass("Website Launched with given url.");
@@ -41,8 +32,7 @@ public class CollegeModule extends KSGExtentReports {
 		System.out.println("");
 	}
 
-	@Test
-	@Order(2)
+	@Test(priority=2)
 	@Then("Hover on College and click on AboutKSG")
 	public void hover_on_college_and_click_on_about_ksg() {
 		
@@ -51,8 +41,8 @@ public class CollegeModule extends KSGExtentReports {
 		college.hoverOnCollegeAndSelectaboutKSG1();
 	}
 
-	@Test
-	@Order(3)
+	@Test(priority=3)
+	
 	@Then("Hover on College and click on Management")
 	public void hover_on_college_and_click_on_management() {
 
@@ -61,8 +51,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectManagement();
 	}
 
-	@Test
-	@Order(4)
+	@Test(priority=4)
 	@Then("Hover on College and click on Achevement")
 	public void hover_on_college_and_click_on_achevement() {
 
@@ -71,8 +60,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectAchievement();
 	}
 
-	@Test
-	@Order(5)
+	@Test(priority=5)
 	@Then("Hover on College and click on College Council")
 	public void hover_on_college_and_click_on_college_council() {
 
@@ -81,8 +69,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectCollegeCouncil();
 	}
 
-	@Test
-	@Order(6)
+	@Test(priority=6)
 	@Then("Hover on College and click on College Committee")
 	public void hover_on_college_and_click_on_college_committee() {
 
@@ -91,8 +78,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectCollegeCommittee();
 	}
 
-	@Test
-	@Order(7)
+	@Test(priority=7)
 	@Then("Hover on College and click on Charity")
 	public void hover_on_college_and_click_on_charity() {
 
@@ -101,8 +87,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectCharity();
 	}
 
-	@Test
-	@Order(8)
+	@Test(priority=8)
 	@Then("Hover on College and click on Events1")
 	public void hover_on_college_and_click_on_events1() {
 
@@ -111,8 +96,7 @@ public class CollegeModule extends KSGExtentReports {
 		college.selectEvent1();
 	}
 
-	@Test
-	@Order(9)
+	@Test(priority=9)
 	@Then("Hover on College and click on Videos")
 	public void hover_on_college_and_click_on_videos() {
 
@@ -122,8 +106,8 @@ public class CollegeModule extends KSGExtentReports {
 	}
 	
 	
-	@AfterAll
-	public static void FlushReport() {
+	@AfterSuite
+	public void FlushReport() {
 		flushTest();
 		DriversInit.quitDriver();
 	}

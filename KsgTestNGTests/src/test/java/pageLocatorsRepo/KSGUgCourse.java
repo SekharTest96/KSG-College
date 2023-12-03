@@ -7,7 +7,8 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.junit.Assert;
+import org.testng.Assert;
+
 import utilities.DriversInit;
 
 public class KSGUgCourse {
@@ -357,7 +358,7 @@ public class KSGUgCourse {
 		String expectedTitle = "BACHELOR OF BUSINESS ADMINISTRATION (CA)";
 		String actualTitle =BbaCATitle.getText();
 		System.out.println(actualTitle);
-		org.junit.Assert.assertEquals(expectedTitle, actualTitle);
+		Assert.assertEquals(expectedTitle, actualTitle);
 		
 		System.out.println();
 		System.out.println("titles matched..");

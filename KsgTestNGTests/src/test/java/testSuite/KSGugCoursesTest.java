@@ -14,9 +14,9 @@ public class KSGugCoursesTest extends KSGExtentReports {
 	KSGUgCourse ug = new KSGUgCourse(DriversInit.getDriver());
 
 	@BeforeSuite
-	public static void openBrowser() {
+	public  void openBrowser() {
 		reportUg();
-
+		System.out.println("Report ug of extent started.. ");
 	}
 
 	@Test(priority=1)
@@ -164,8 +164,9 @@ public class KSGugCoursesTest extends KSGExtentReports {
 
 	
 	@AfterSuite
-	public static void closeBrowser() {
+	public  void closeBrowser() {
 		flushTest();
+		System.out.println("Report ug of extent ended.. check reports at target/ExtentReport  ");
 		DriversInit.quitDriver();
 	}
 

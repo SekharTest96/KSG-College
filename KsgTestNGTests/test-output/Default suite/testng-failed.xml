@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuite.PlacementModule">
+      <class name="testSuite.KSGCampus">
         <methods>
-          <include name="Hover_on_Placement_and_click_on_Career"/>
-          <include name="beforeTests"/>
-          <include name="Hover_on_Placement_and_click_on_Activities"/>
-          <include name="Hover_on_Placement_and_click_on_Companies"/>
-          <include name="FlushReport"/>
+          <include name="website_launched_with_the_url"/>
         </methods>
-      </class> <!-- testSuite.PlacementModule -->
+      </class> <!-- testSuite.KSGCampus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

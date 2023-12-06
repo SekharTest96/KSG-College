@@ -17,7 +17,7 @@ public class KSGServiceModule extends KSGExtentReports {
 	@BeforeSuite
 	public  void beforeTests() {
 		reportService();
-		System.out.println("Report Reg of extent started.. ");
+		System.out.println("Report service of extent started.. ");
 
 	}
 
@@ -87,6 +87,7 @@ public class KSGServiceModule extends KSGExtentReports {
 	@AfterSuite
 	public static void FlushReport() {
 		flushTest();
+		System.out.println("Report service of extent ended.. check reports at target/ExtentReport ");
 		DriversInit.quitDriver();
 	}
 }

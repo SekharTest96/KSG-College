@@ -73,6 +73,7 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	@AfterSuite
 	public  void closeBrowser() {
 		flushTest();
+		System.out.println("Report Reg of extent ended..  check reports at target/ExtentReport  ");
 		DriversInit.quitDriver();
 	}
 }

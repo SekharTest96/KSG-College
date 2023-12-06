@@ -24,7 +24,7 @@ public class CollegeModule extends KSGExtentReports {
 	@BeforeAll
 	public static void beforeTests() {
 		reportCM();
-		System.out.println("Report Reg of extent started.. ");
+		System.out.println("Report College of extent started.. ");
 
 	}
 
@@ -40,6 +40,8 @@ public class CollegeModule extends KSGExtentReports {
 		System.out.println("Website Launched with given url. ");
 		System.out.println("");
 	}
+	
+
 
 	@Test
 	@Order(2)
@@ -125,6 +127,7 @@ public class CollegeModule extends KSGExtentReports {
 	@AfterAll
 	public static void FlushReport() {
 		flushTest();
+		System.out.println("Report college of extent ended..  check reports at target/ExtentReport   ");
 		DriversInit.quitDriver();
 	}
 

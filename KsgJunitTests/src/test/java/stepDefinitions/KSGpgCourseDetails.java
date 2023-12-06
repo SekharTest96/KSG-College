@@ -24,7 +24,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	@BeforeAll
 	public static void openBrowser() {
 		reportPg();
-
+		System.out.println("Report pg of extent started.. ");
 	}
 
 	@Test
@@ -143,6 +143,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	@AfterAll
 	public static void closeBrowser() {
 		flushTest();
+		System.out.println("Report pg of extent ended.. check reports at target/ExtentReport  ");
 		DriversInit.quitDriver();
 	}
 

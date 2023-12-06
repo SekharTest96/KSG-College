@@ -1,14 +1,11 @@
 package testSuite;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import pageLocatorsRepo.CollegeModuleRepo;
 import pageLocatorsRepo.KSGPgcourses;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
@@ -19,7 +16,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	@BeforeSuite
 	public static void openBrowser() {
 		reportPg();
-
+		System.out.println("Report pg of extent started.. ");
 	}
 
 	@Test(priority=1)
@@ -128,6 +125,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	@AfterSuite
 	public static void closeBrowser() {
 		flushTest();
+		System.out.println("Report pg of extent ended.. check reports at target/ExtentReport  ");
 		DriversInit.quitDriver();
 	}
 

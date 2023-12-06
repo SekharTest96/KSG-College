@@ -24,7 +24,7 @@ public class PlacementModule extends KSGExtentReports {
 	@BeforeAll
 	public static void beforeTests() {
 		reportPlacement();
-		System.out.println("Report Reg of extent started.. ");
+		System.out.println("Report placement of extent started.. ");
 
 	}
 
@@ -96,6 +96,7 @@ public class PlacementModule extends KSGExtentReports {
 	@AfterAll
 	public static void FlushReport() {
 		flushTest();
+		System.out.println("Report placement of extent ended.. check reports at target/ExtentReport ");
 		DriversInit.quitDriver();
 	}
 

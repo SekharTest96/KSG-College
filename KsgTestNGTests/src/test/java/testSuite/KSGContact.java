@@ -6,16 +6,20 @@ import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGContactRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 
 public class KSGContact extends KSGExtentReports{
 
+	
+	KSGContactRepo contact = new KSGContactRepo(DriversInit.getDriver());
+	
 	@BeforeSuite
 	public void beforeTests() {
 		reportContact();
 		System.out.println("Report Contact of extent started.. ");
-
+		
 	}
 
 	@Test(priority=1)
@@ -39,7 +43,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Hover on Campus and click on Contact");
 		test.pass("sucessfully navigated to  Contact web page.");
-		
+		contact.hoverOnContactAndSelectContact();
 	}
 	
 	@Test(priority=3)
@@ -48,7 +52,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Check heading of webpage is Contact");
 		test.pass("Heading of Web Page is Contact.");
-		
+		contact.checkContactHeading();
 	}
 	
 	@Test(priority=4)
@@ -57,7 +61,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Check the title of webpage Contact");
 		test.pass("Title of Web Page is Contact.");
-		
+		contact.checkContactTitle();
 	}
 
 	@AfterSuite

@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGContactRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -18,6 +19,7 @@ import utilities.TestListnersss;
 @ExtendWith(TestListnersss.class)
 public class KSGContact extends KSGExtentReports{
 
+	KSGContactRepo contact = new KSGContactRepo(DriversInit.getDriver());
 	
 	@BeforeAll
 	public static void beforeTests() {
@@ -48,7 +50,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Hover on Campus and click on Contact");
 		test.pass("sucessfully navigated to Contact web page.");
-		
+		contact.hoverOnContactAndSelectContact();
 	}
 	
 	@Test
@@ -58,7 +60,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Check heading of webpage is Contact");
 		test.pass("Heading of Web Page is Contact.");
-		
+		contact.checkContactHeading();
 	}
 	
 	@Test
@@ -68,7 +70,7 @@ public class KSGContact extends KSGExtentReports{
 		
 		test = CreateTest("Check the title of webpage Contact");
 		test.pass("Title of Web Page is Contact.");
-		
+		contact.checkContactTitle();
 	}
 	
 	@AfterAll

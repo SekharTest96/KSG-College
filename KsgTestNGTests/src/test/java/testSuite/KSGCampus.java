@@ -8,11 +8,15 @@ import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGCampusRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 
 public class KSGCampus extends KSGExtentReports  {
 
+	
+	KSGCampusRepo campus = new KSGCampusRepo(DriversInit.getDriver());
+	
 	@BeforeSuite
 	public void beforeTests() {
 		reportCampus();
@@ -41,7 +45,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Hover on Campus and click on Campus");
 		test.pass("sucessfully navigated to  Campus web page.");
-		
+		campus.hoverOnCampusAndSelectCampus();
 	}
 	
 	@Test(priority=3)
@@ -50,7 +54,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Check heading of webpage is Campus");
 		test.pass("Heading of Web Page is Campus.");
-		
+		campus.checkCampusHeading();
 	}
 	
 	@Test(priority=4)
@@ -59,7 +63,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Check the title of webpage Campus");
 		test.pass("Title of Web Page is Campus.");
-		
+		campus.checkCampusTitle();
 	}
 	
 	@Test(priority=5)
@@ -69,7 +73,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Hover on Campus and click on NSS");
 		test.pass("sucessfully navigated to NSS web page.");
-		
+		campus.hoverOnCampusAndSelectNSS();
 	}
 	
 	@Test(priority=6)
@@ -78,7 +82,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Check heading of webpage is NSS");
 		test.pass("Heading of Web Page is NSS.");
-		
+		campus.checkNssHeading();
 	}
 	
 	@Test(priority=7)
@@ -87,7 +91,7 @@ public class KSGCampus extends KSGExtentReports  {
 		
 		test = CreateTest("Check the title of webpage NSS");
 		test.pass("Title of Web Page is NSS.");
-		
+		campus.checkNssTitle();
 	}
 	
 	

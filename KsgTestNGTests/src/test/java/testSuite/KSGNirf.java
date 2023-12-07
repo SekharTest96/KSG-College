@@ -6,11 +6,15 @@ import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGNirfRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 
 public class KSGNirf extends KSGExtentReports {
 
+	
+	KSGNirfRepo nirf = new KSGNirfRepo(DriversInit.getDriver());
+	
 	@BeforeSuite
 	public void beforeTests() {
 		reportNirf ();
@@ -39,7 +43,7 @@ public class KSGNirf extends KSGExtentReports {
 		
 		test = CreateTest("Hover on Facilities and click on NIRF ");
 		test.pass("sucessfully navigated to NIRF  web page.");
-		
+		nirf.hoverOnNirftAndSelectNirf();
 	}
 	
 	@Test(priority=3)
@@ -48,6 +52,7 @@ public class KSGNirf extends KSGExtentReports {
 		
 		test = CreateTest("Check heading of webpage is NIRF ");
 		test.pass("Heading of Web Page is NIRF .");
+		nirf.checkNirfHeading();
 		
 	}
 	
@@ -57,7 +62,7 @@ public class KSGNirf extends KSGExtentReports {
 		
 		test = CreateTest("Check the title of webpage NIRF");
 		test.pass("Title of Web Page is NIRF.");
-		
+		nirf.checkNirfTitle();
 	}
 
 

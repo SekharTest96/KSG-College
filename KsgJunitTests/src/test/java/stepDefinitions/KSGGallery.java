@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGGalleryRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -18,6 +19,7 @@ import utilities.TestListnersss;
 @ExtendWith(TestListnersss.class)
 public class KSGGallery extends KSGExtentReports{
 
+	KSGGalleryRepo gallery = new KSGGalleryRepo(DriversInit.getDriver());
 	
 	@BeforeAll
 	public static void beforeTests() {
@@ -48,7 +50,7 @@ public class KSGGallery extends KSGExtentReports{
 		
 		test = CreateTest("Hover on Facilities and click on Gallery");
 		test.pass("sucessfully navigated to Gallery web page.");
-		
+		gallery.hoverOnGallerytAndSelectGallery();
 	}
 	
 	@Test
@@ -58,7 +60,7 @@ public class KSGGallery extends KSGExtentReports{
 		
 		test = CreateTest("Check heading of webpage is Gallery");
 		test.pass("Heading of Web Page is Gallery.");
-		
+		gallery.checkGalleryHeading();
 	}
 	
 	@Test
@@ -68,7 +70,7 @@ public class KSGGallery extends KSGExtentReports{
 		
 		test = CreateTest("Check the title of webpage Gallery");
 		test.pass("Title of Web Page is Gallery.");
-		
+		gallery.checkGalleryTitle();
 	}
 	
 	

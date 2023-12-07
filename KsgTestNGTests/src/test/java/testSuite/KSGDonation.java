@@ -6,11 +6,15 @@ import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGDonationRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 
 public class KSGDonation extends KSGExtentReports {
 
+	
+	KSGDonationRepo donation = new KSGDonationRepo(DriversInit.getDriver());
+	
 	@BeforeSuite
 	public void beforeTests() {
 		reportDonation();
@@ -39,7 +43,7 @@ public class KSGDonation extends KSGExtentReports {
 		
 		test = CreateTest("Hover on Campus and click on Donation");
 		test.pass("sucessfully navigated to Donation web page.");
-		
+		donation.hoverOnDonationAndSelectDonation();
 	}
 	
 	@Test(priority=3)
@@ -47,8 +51,8 @@ public class KSGDonation extends KSGExtentReports {
 	public void Check_heading_of_webpage_is_Donation() {
 		
 		test = CreateTest("Check heading of webpage is Donation");
-		test.pass("Heading of Web Page is Donation.");
-		
+		test.fail("Heading of Web Page is Campus");
+		donation.checkDonationHeading();
 	}
 	
 	@Test(priority=4)
@@ -56,7 +60,18 @@ public class KSGDonation extends KSGExtentReports {
 	public void Check_the_title_of_webpage_Donation() {
 		
 		test = CreateTest("Check the title of webpage Donation");
-		test.pass("Title of Web Page is Donation.");
+		test.fail("Title of Web Page is Campus.");
+		donation.checkDonationTitle();
+		
+	}
+	
+	@Test(priority=5)
+	@Then("Check the Online Payment Details of Donation")
+	public void Check_the_Online_Payment_Details_of_Donation() {
+		
+		test = CreateTest("Check the Online Payment Details Donation");
+		test.pass("Online Payment Deatils are correct.");
+		donation.validateOnlinePaymentDetails();
 		
 	}
 

@@ -1,7 +1,5 @@
 package constants;
 
-import utilities.GetDataUsingExcel;
-
 public class Constantss {
 
 	

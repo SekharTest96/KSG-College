@@ -6,11 +6,16 @@ import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGFacilitiesRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 
 public class KSGFacilities extends KSGExtentReports {
 
+	
+	KSGFacilitiesRepo facilities = new KSGFacilitiesRepo (DriversInit.getDriver());
+	
+	
 	@BeforeSuite
 	public void beforeTests() {
 		reportFacilities();
@@ -39,7 +44,7 @@ public class KSGFacilities extends KSGExtentReports {
 		
 		test = CreateTest("Hover on Facilities and click on Facilities");
 		test.pass("sucessfully navigated to Facilities web page.");
-		
+		facilities.hoverOnFacilitiesAndSelectFacilities();
 	}
 	
 	@Test(priority=3)
@@ -57,7 +62,7 @@ public class KSGFacilities extends KSGExtentReports {
 		
 		test = CreateTest("Check the title of webpage Facilities");
 		test.pass("Title of Web Page is Facilities.");
-		
+		facilities.checkFacilitiesTitle();
 	}
 
 

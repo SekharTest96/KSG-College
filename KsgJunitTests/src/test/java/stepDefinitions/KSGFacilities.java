@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGFacilitiesRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -18,6 +19,8 @@ import utilities.TestListnersss;
 @ExtendWith(TestListnersss.class)
 public class KSGFacilities extends KSGExtentReports{
 
+	
+	KSGFacilitiesRepo facilities = new KSGFacilitiesRepo (DriversInit.getDriver());
 	
 	@BeforeAll
 	public static void beforeTests() {
@@ -47,7 +50,7 @@ public class KSGFacilities extends KSGExtentReports{
 		
 		test = CreateTest("Hover on Facilities and click on Facilities");
 		test.pass("sucessfully navigated to Facilities web page.");
-		
+		facilities.hoverOnFacilitiesAndSelectFacilities();
 	}
 	
 	@Test
@@ -67,7 +70,7 @@ public class KSGFacilities extends KSGExtentReports{
 		
 		test = CreateTest("Check the title of webpage Facilities");
 		test.pass("Title of Web Page is Facilities.");
-		
+		facilities.checkFacilitiesTitle();
 	}
 	
 	

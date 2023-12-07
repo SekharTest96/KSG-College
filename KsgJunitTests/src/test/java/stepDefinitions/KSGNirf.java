@@ -10,6 +10,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pageLocatorsRepo.KSGNirfRepo;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -18,6 +19,8 @@ import utilities.TestListnersss;
 @ExtendWith(TestListnersss.class)
 public class KSGNirf extends KSGExtentReports{
 
+	
+	KSGNirfRepo nirf = new KSGNirfRepo(DriversInit.getDriver());
 	
 	@BeforeAll
 	public static void beforeTests() {
@@ -48,7 +51,7 @@ public class KSGNirf extends KSGExtentReports{
 		
 		test = CreateTest("Hover on Facilities and click on NIRF");
 		test.pass("sucessfully navigated to NIRF web page.");
-		
+		nirf.hoverOnNirftAndSelectNirf();
 	}
 	
 	@Test
@@ -58,7 +61,7 @@ public class KSGNirf extends KSGExtentReports{
 		
 		test = CreateTest("Check heading of webpage is NIRF");
 		test.pass("Heading of Web Page is NIRF.");
-		
+		nirf.checkNirfHeading();
 	}
 	
 	@Test
@@ -68,7 +71,7 @@ public class KSGNirf extends KSGExtentReports{
 		
 		test = CreateTest("Check the title of webpage NIRF");
 		test.pass("Title of Web Page is NIRF.");
-		
+		nirf.checkNirfTitle();
 	}
 	
 	

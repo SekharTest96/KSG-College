@@ -6,3 +6,4 @@ Feature: KSG Donation Module
     Then Hover on Donation and click on Donation
     Then Check heading of webpage is Donation
     Then Check the title of webpage Donation
+    Then Check the Online Payment Details of Donation

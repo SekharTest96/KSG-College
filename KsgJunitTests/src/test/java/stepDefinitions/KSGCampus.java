@@ -83,7 +83,7 @@ public class KSGCampus extends KSGExtentReports {
 	}
 	
 	@Test
-	@Order(3)
+	@Order(6)
 	@Then("Check heading of webpage is NSS")
 	public void Check_heading_of_webpage_is_NSS() {
 		
@@ -93,7 +93,7 @@ public class KSGCampus extends KSGExtentReports {
 	}
 	
 	@Test
-	@Order(4)
+	@Order(7)
 	@Then("Check the title of webpage NSS")
 	public void Check_the_title_of_webpage_NSS() {
 		

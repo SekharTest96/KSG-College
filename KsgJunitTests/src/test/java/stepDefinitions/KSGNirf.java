@@ -9,6 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -37,6 +38,40 @@ public class KSGNirf extends KSGExtentReports{
 		System.out.println("Website Launched with given url. ");
 		System.out.println("");
 	}
+	
+	
+
+	@Test
+	@Order(2)
+	@Then("Hover on NIRF and click on NIRF")
+	public void hover_on_NIRF_and_click_on_NIRF() {
+		
+		test = CreateTest("Hover on Facilities and click on NIRF");
+		test.pass("sucessfully navigated to NIRF web page.");
+		
+	}
+	
+	@Test
+	@Order(3)
+	@Then("Check heading of webpage is NIRF")
+	public void Check_heading_of_webpage_is_Donation() {
+		
+		test = CreateTest("Check heading of webpage is NIRF");
+		test.pass("Heading of Web Page is NIRF.");
+		
+	}
+	
+	@Test
+	@Order(4)
+	@Then("Check the title of webpage NIRF")
+	public void Check_the_title_of_webpage_Facilities() {
+		
+		test = CreateTest("Check the title of webpage NIRF");
+		test.pass("Title of Web Page is NIRF.");
+		
+	}
+	
+	
 	
 	@AfterAll
 	public static void FlushReport() {

@@ -36,10 +36,10 @@ public class KSGCampus extends KSGExtentReports  {
 	
 	@Test(priority=2)
 
-	@Then("Hover on Campus and click on it")
+	@Then("Hover on Campus and click on Campus")
 	public void hover_on_Campus_and_click_on_it() {
 		
-		test = CreateTest("Hover on Campus and click on it");
+		test = CreateTest("Hover on Campus and click on Campus");
 		test.pass("sucessfully navigated to  Campus web page.");
 		
 	}
@@ -61,6 +61,35 @@ public class KSGCampus extends KSGExtentReports  {
 		test.pass("Title of Web Page is Campus.");
 		
 	}
+	
+	@Test(priority=5)
+
+	@Then("Hover on Campus and click on NSS")
+	public void hover_on_Campus_and_click_on_NSS() {
+		
+		test = CreateTest("Hover on Campus and click on NSS");
+		test.pass("sucessfully navigated to NSS web page.");
+		
+	}
+	
+	@Test(priority=6)
+	@Then("Check heading of webpage is NSS")
+	public void Check_heading_of_webpage_is_NSS() {
+		
+		test = CreateTest("Check heading of webpage is NSS");
+		test.pass("Heading of Web Page is NSS.");
+		
+	}
+	
+	@Test(priority=7)
+	@Then("Check the title of webpage NSS")
+	public void Check_the_title_of_webpage_NSS() {
+		
+		test = CreateTest("Check the title of webpage NSS");
+		test.pass("Title of Web Page is NSS.");
+		
+	}
+	
 	
 	@AfterSuite
 	public void FlushReport() {

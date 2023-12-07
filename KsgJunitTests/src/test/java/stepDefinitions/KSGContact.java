@@ -9,6 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -36,6 +37,38 @@ public class KSGContact extends KSGExtentReports{
 		System.out.println("");
 		System.out.println("Website Launched with given url. ");
 		System.out.println("");
+	}
+	
+	
+	
+	@Test
+	@Order(2)
+	@Then("Hover on Contact and click on Contact")
+	public void hover_on_Contact_and_click_on_it() {
+		
+		test = CreateTest("Hover on Campus and click on Contact");
+		test.pass("sucessfully navigated to Contact web page.");
+		
+	}
+	
+	@Test
+	@Order(3)
+	@Then("Check heading of webpage is Contact")
+	public void Check_heading_of_webpage_is_Contact() {
+		
+		test = CreateTest("Check heading of webpage is Contact");
+		test.pass("Heading of Web Page is Contact.");
+		
+	}
+	
+	@Test
+	@Order(4)
+	@Then("Check the title of webpage Contact")
+	public void Check_the_title_of_webpage_Contact() {
+		
+		test = CreateTest("Check the title of webpage Contact");
+		test.pass("Title of Web Page is Contact.");
+		
 	}
 	
 	@AfterAll

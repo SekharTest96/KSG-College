@@ -68,9 +68,8 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	}
 
-	@Test
 	 @Order(4)
-	@Then("Entered valid card details")
+	@Then("Entered valiid card details")
 	public void entered_valiid_card_details() {
 	
 		ExtentTest  test = CreateTest("Entered valiid card details . "); 

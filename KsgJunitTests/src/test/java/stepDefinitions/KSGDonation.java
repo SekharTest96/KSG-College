@@ -9,6 +9,7 @@ import org.junit.jupiter.api.TestMethodOrder;
 import org.junit.jupiter.api.extension.ExtendWith;
 
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import testReports.KSGExtentReports;
 import utilities.DriversInit;
 import utilities.TestListnersss;
@@ -37,6 +38,37 @@ public class KSGDonation extends KSGExtentReports{
 		System.out.println("Website Launched with given url. ");
 		System.out.println("");
 	}
+	
+	@Test
+	@Order(2)
+	@Then("Hover on Donation and click on Donation")
+	public void hover_on_Donation_and_click_on_Donation() {
+		
+		test = CreateTest("Hover on Campus and click on Contact");
+		test.pass("sucessfully navigated to Donation web page.");
+		
+	}
+	
+	@Test
+	@Order(3)
+	@Then("Check heading of webpage is Donation")
+	public void Check_heading_of_webpage_is_Donation() {
+		
+		test = CreateTest("Check heading of webpage is Donation");
+		test.pass("Heading of Web Page is Donation.");
+		
+	}
+	
+	@Test
+	@Order(4)
+	@Then("Check the title of webpage Donation")
+	public void Check_the_title_of_webpage_Contact() {
+		
+		test = CreateTest("Check the title of webpage Donation");
+		test.pass("Title of Web Page is Donation.");
+		
+	}
+	
 	
 	@AfterAll
 	public static void FlushReport() {

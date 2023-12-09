@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -13,7 +15,7 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 
 	KSGPgcourses pg = new KSGPgcourses(DriversInit.getDriver());
 
-	@BeforeSuite
+	@BeforeClass
 	public static void openBrowser() {
 		reportPg();
 		System.out.println("Report pg of extent started.. ");
@@ -122,11 +124,16 @@ public class KSGpgCourseDetails extends KSGExtentReports {
 	}
 
 	
-	@AfterSuite
-	public static void closeBrowser() {
+	@AfterClass
+	public static void flushReport() {
 		flushTest();
 		System.out.println("Report pg of extent ended.. check reports at target/ExtentReport  ");
-		DriversInit.quitDriver();
+		
 	}
 
+	
+	@AfterSuite
+	public void closeBrowser() {
+		DriversInit.quitDriver();
+	}
 }

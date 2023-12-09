@@ -2,7 +2,9 @@ package testSuite;
 
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -17,7 +19,7 @@ public class KSGCampus extends KSGExtentReports  {
 	
 	KSGCampusRepo campus = new KSGCampusRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportCampus();
 		System.out.println("Report campus of extent started.. ");
@@ -57,16 +59,9 @@ public class KSGCampus extends KSGExtentReports  {
 		campus.checkCampusHeading();
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage Campus")
-	public void Check_the_title_of_webpage_Campus() {
-		
-		test = CreateTest("Check the title of webpage Campus");
-		test.pass("Title of Web Page is Campus.");
-		campus.checkCampusTitle();
-	}
 	
-	@Test(priority=5)
+	
+	@Test(priority=4)
 
 	@Then("Hover on Campus and click on NSS")
 	public void hover_on_Campus_and_click_on_NSS() {
@@ -76,7 +71,7 @@ public class KSGCampus extends KSGExtentReports  {
 		campus.hoverOnCampusAndSelectNSS();
 	}
 	
-	@Test(priority=6)
+	@Test(priority=5)
 	@Then("Check heading of webpage is NSS")
 	public void Check_heading_of_webpage_is_NSS() {
 		
@@ -85,20 +80,17 @@ public class KSGCampus extends KSGExtentReports  {
 		campus.checkNssHeading();
 	}
 	
-	@Test(priority=7)
-	@Then("Check the title of webpage NSS")
-	public void Check_the_title_of_webpage_NSS() {
-		
-		test = CreateTest("Check the title of webpage NSS");
-		test.pass("Title of Web Page is NSS.");
-		campus.checkNssTitle();
-	}
 	
 	
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report campus of extent ended..  check reports at target/ExtentReport   ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

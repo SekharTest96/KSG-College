@@ -2,7 +2,9 @@ package testSuite;
 
 
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,7 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	
 	KSGonlineAdmissionRepo reg = new KSGonlineAdmissionRepo(DriversInit.getDriver());
 
-	@BeforeSuite
+	@BeforeClass
 	public static void beforeTests() {
 		reportReg();
 			System.out.println("Report Reg of extent started.. ");
@@ -70,10 +72,15 @@ public class KSGonlineAdmissionForm extends KSGExtentReports{
 	}
 	
 	
-	@AfterSuite
-	public  void closeBrowser() {
+	@AfterClass
+	public  void flushReport() {
 		flushTest();
 		System.out.println("Report Reg of extent ended..  check reports at target/ExtentReport  ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

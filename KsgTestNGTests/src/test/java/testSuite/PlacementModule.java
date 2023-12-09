@@ -15,7 +15,7 @@ public class PlacementModule extends KSGExtentReports {
 
 	PlacementModuleRepo placement = new PlacementModuleRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public  void beforeTests() {
 		reportPlacement();
 		System.out.println("Report placement of extent started.. ");
@@ -81,13 +81,16 @@ public class PlacementModule extends KSGExtentReports {
 	}
 
 	
-	@AfterSuite
+	@AfterClass
 	public  void FlushReport() {
 		flushTest();
 		
 		System.out.println("Report placement of extent ended.. check reports at target/ExtentReport ");
-		DriversInit.quitDriver();
+		
 	}
 
-	
+	@AfterSuite
+	public void closeBrowser() {
+		DriversInit.quitDriver();
+	}
 }

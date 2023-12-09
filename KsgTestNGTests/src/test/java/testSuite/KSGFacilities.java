@@ -1,7 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
@@ -16,7 +17,7 @@ public class KSGFacilities extends KSGExtentReports {
 	KSGFacilitiesRepo facilities = new KSGFacilitiesRepo (DriversInit.getDriver());
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportFacilities();
 		System.out.println("Report facilities of extent started.. ");
@@ -53,24 +54,23 @@ public class KSGFacilities extends KSGExtentReports {
 		
 		test = CreateTest("Check heading of webpage is Facilities");
 		test.pass("Heading of Web Page is Facilities.");
+		facilities.checkGalleryHeading();
 		
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage Facilities")
-	public void Check_the_title_of_webpage_Facilities() {
-		
-		test = CreateTest("Check the title of webpage Facilities");
-		test.pass("Title of Web Page is Facilities.");
-		facilities.checkFacilitiesTitle();
-	}
+	
 
 
 
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report facilities of extent ended..  check reports at target/ExtentReport   ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

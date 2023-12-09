@@ -19,6 +19,8 @@ public class CollegeModuleRepo {
 
 	@FindBy(xpath = "//a[contains(text(), \"COLLEGE\")]")
 	WebElement college;
+	 @FindBy (how = How.XPATH, using = "(//a[@href=\"About.php\"])[3]") WebElement aboutKSG3;
+	 @FindBy(xpath= "(//a[@href=\"About.php\"])[]") WebElement aboutKSG2;
 	@FindBy(how = How.XPATH, using = "(//a[@href=\"About.php\"])[1]")
 	WebElement aboutKSG1;
 	@FindBy(xpath = "//a[@href=\"Management.php\"]")
@@ -33,14 +35,19 @@ public class CollegeModuleRepo {
 	WebElement charity;
 	@FindBy(xpath = "(//a[@href=\"events.php\"])[1]")
 	WebElement event1;
+	@FindBy(xpath = "(//a[@href=\"events.php\"])[2]")
+	WebElement event2;
 	@FindBy(how = How.XPATH, using = "//A[@href=\"Video.php\"]")
 	WebElement videos;
-	// @FindBy (how = How.XPATH, using = "") WebElement ;
-	// @FindBy(xpath= " ") WebElement ;
+	
 	
 
 	public void hoverOnCollegeAndSelectaboutKSG1() {
 		act.moveToElement(college).build().perform();
+		act.moveToElement(aboutKSG2).build().perform();
+		aboutKSG2.click();
+		act.moveToElement(aboutKSG3).build().perform();
+		aboutKSG3.click();
 		act.moveToElement(aboutKSG1).build().perform();
 		aboutKSG1.click();
 
@@ -78,6 +85,8 @@ public class CollegeModuleRepo {
 
 	public void selectEvent1() {
 		act.moveToElement(college).build().perform();
+		act.moveToElement(event2).build().perform();
+		event2.click();
 		act.moveToElement(event1).build().perform();
 		event1.click();
 

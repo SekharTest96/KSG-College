@@ -18,7 +18,7 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	OnlinePaymentRepo pay = new OnlinePaymentRepo(DriversInit.getDriver());
 
-	@BeforeSuite
+	@BeforeClass
 	public static void openBrowser() {
 		reportPay();
 		System.out.println("Report pay of extent started.. ");
@@ -115,12 +115,16 @@ public class KSGonlinePaymentTest extends KSGExtentReports {
 
 	
 	
-	@AfterSuite
+	@AfterClass
 	public  void FlushReport() {
 		flushTest();
 		System.out.println("Report pay of extent ended..  check reports at target/ExtentReport   ");
-		DriversInit.quitDriver();
+		
 	}
 	
+	@AfterSuite
+	public void closeBrowser() {
+		DriversInit.quitDriver();
+	}
 
 }

@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -14,7 +16,7 @@ public class KSGServiceModule extends KSGExtentReports {
 	
 	KSGServiceModuleRepo service = new KSGServiceModuleRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public  void beforeTests() {
 		reportService();
 		System.out.println("Report service of extent started.. ");
@@ -84,10 +86,15 @@ public class KSGServiceModule extends KSGExtentReports {
 	
 	
 	
-	@AfterSuite
+	@AfterClass
 	public static void FlushReport() {
 		flushTest();
 		System.out.println("Report service of extent ended.. check reports at target/ExtentReport ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

@@ -1,4 +1,4 @@
-package Com.KSG.KsgJunitTests;
+package Com.KSG.KSGJunitTests;
 
 import static org.junit.Assert.assertTrue;
 

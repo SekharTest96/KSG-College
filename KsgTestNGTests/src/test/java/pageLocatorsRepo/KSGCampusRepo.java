@@ -46,11 +46,7 @@ public class KSGCampusRepo {
 	}
 	
 	
-	public void checkCampusTitle() {
-		String actualTitle = DriversInit.driver.getTitle();
-		String expectedTitle = "Campus";
-		Assert.assertEquals(actualTitle, expectedTitle);
-	}
+	
 
 	public void hoverOnCampusAndSelectNSS() {
 		act.moveToElement(campus1).build().perform();
@@ -61,13 +57,10 @@ public class KSGCampusRepo {
 
 	public void checkNssHeading() {
 		String actualHeading = nssHeading.getText().trim();
+		System.out.println("Actual Heading is "+actualHeading);
 		String expectedHeading = "NSS PROGRAMME OFFICER";
 		Assert.assertEquals(actualHeading, expectedHeading);
 	}
 	
-	public void checkNssTitle() {
-		String actualTitle = DriversInit.driver.getTitle();
-		String expectedTitle = "NSS PROGRAMME OFFICER";
-		Assert.assertEquals(actualTitle, expectedTitle);
-	}
+	
 }

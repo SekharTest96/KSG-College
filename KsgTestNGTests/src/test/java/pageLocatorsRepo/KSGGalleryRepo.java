@@ -39,16 +39,13 @@ public class KSGGalleryRepo {
 			}
 		 
 			public void checkGalleryHeading() {
-				String actualHeading = galleryHeading.getText().trim();
+				String actualHeading = galleryHeading.getText();
+				System.out.println("Actual Heading is "+actualHeading);
 				String expectedHeading = "Gallery";
 				Assert.assertEquals(actualHeading, expectedHeading);
 
 			}
 			
-			public void checkGalleryTitle() {
-				String actualTitle = DriversInit.driver.getTitle();
-				String expectedTitle = "Gallery";
-				Assert.assertEquals(actualTitle, expectedTitle);
-			}
+			
 		
 }

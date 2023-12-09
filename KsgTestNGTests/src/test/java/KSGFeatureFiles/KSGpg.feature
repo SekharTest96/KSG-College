@@ -1,5 +1,5 @@
 #Author: sunkuramanasekhar@btsinfotech.com
-Feature: KSG Online Registration  Module
+Feature: KSG PG  Module
 
   Scenario: Validation of PG Course module of KSC College
   

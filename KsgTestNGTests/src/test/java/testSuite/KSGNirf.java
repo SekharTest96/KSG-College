@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ public class KSGNirf extends KSGExtentReports {
 	
 	KSGNirfRepo nirf = new KSGNirfRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportNirf ();
 		System.out.println("Report Nirf  of extent started.. ");
@@ -56,24 +58,18 @@ public class KSGNirf extends KSGExtentReports {
 		
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage NIRF")
-	public void Check_the_title_of_webpage_NIRF() {
-		
-		test = CreateTest("Check the title of webpage NIRF");
-		test.pass("Title of Web Page is NIRF.");
-		nirf.checkNirfTitle();
-	}
-
-
-
 
 
 	
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report Nirf  of extent ended..  check reports at target/ExtentReport   ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

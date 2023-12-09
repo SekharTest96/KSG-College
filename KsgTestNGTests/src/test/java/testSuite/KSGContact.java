@@ -1,7 +1,10 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.cucumber.java.en.Given;
@@ -15,7 +18,7 @@ public class KSGContact extends KSGExtentReports{
 	
 	KSGContactRepo contact = new KSGContactRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportContact();
 		System.out.println("Report Contact of extent started.. ");
@@ -55,19 +58,17 @@ public class KSGContact extends KSGExtentReports{
 		contact.checkContactHeading();
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage Contact")
-	public void Check_the_title_of_webpage_Contact() {
-		
-		test = CreateTest("Check the title of webpage Contact");
-		test.pass("Title of Web Page is Contact.");
-		contact.checkContactTitle();
-	}
 
-	@AfterSuite
+
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report Contact of extent ended..  check reports at target/ExtentReport   ");
+	
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

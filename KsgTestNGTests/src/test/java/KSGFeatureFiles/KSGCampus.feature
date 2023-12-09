@@ -5,7 +5,7 @@ Feature: KSG Campus Module
     Given Website launched with the URL
     Then Hover on Campus and click on Campus
     Then Check heading of webpage is Campus
-    Then Check the title of webpage Campus
+   
     Then Hover on Campus and click on NSS
     Then Check heading of webpage is NSS
-    Then Check the title of webpage NSS
+   

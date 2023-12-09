@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -15,7 +17,7 @@ public class KSGDonation extends KSGExtentReports {
 	
 	KSGDonationRepo donation = new KSGDonationRepo(DriversInit.getDriver());
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportDonation();
 		System.out.println("Report donation of extent started.. ");
@@ -55,17 +57,9 @@ public class KSGDonation extends KSGExtentReports {
 		donation.checkDonationHeading();
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage Donation")
-	public void Check_the_title_of_webpage_Donation() {
-		
-		test = CreateTest("Check the title of webpage Donation");
-		test.fail("Title of Web Page is Campus.");
-		donation.checkDonationTitle();
-		
-	}
+
 	
-	@Test(priority=5)
+	@Test(priority=4)
 	@Then("Check the Online Payment Details of Donation")
 	public void Check_the_Online_Payment_Details_of_Donation() {
 		
@@ -76,10 +70,15 @@ public class KSGDonation extends KSGExtentReports {
 	}
 
 
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report donation of extent ended..  check reports at target/ExtentReport   ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

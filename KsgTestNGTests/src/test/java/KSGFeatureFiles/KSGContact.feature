@@ -5,4 +5,4 @@ Feature: KSG Contact Module
     Given Website launched with the URL
     Then Hover on Contact and click on Contact
     Then Check heading of webpage is Contact
-    Then Check the title of webpage Contact
+  

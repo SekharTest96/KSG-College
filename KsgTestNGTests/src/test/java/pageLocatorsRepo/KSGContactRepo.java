@@ -38,6 +38,7 @@ Actions act = new Actions(DriversInit.driver);
 		 
 			public void checkContactHeading() {
 				String actualHeading =contactHeading.getText().trim();
+				System.out.println("Actual Heading is "+actualHeading);
 				String expectedHeading = "Contact";
 				Assert.assertEquals(actualHeading, expectedHeading);
 

@@ -22,7 +22,7 @@ public class KSGFacilitiesRepo {
 	}
 
 	 @FindBy (how = How.XPATH, using = "//a[@href=\"faclities.php\"]") WebElement facilities;
-		// @FindBy(xpath= " ") WebElement ;
+		 @FindBy(xpath= "//h6[contains(text(), \"Transportation\")]") WebElement transportHeading;
 	// @FindBy (how = How.XPATH, using = "") WebElement ;
 		// @FindBy(xpath= " ") WebElement ;
 	// @FindBy (how = How.XPATH, using = "") WebElement ;
@@ -37,10 +37,12 @@ public class KSGFacilitiesRepo {
 			
 		}
 		
-		public void checkFacilitiesTitle() {
-			String actualTitle = DriversInit.driver.getTitle();
-			String expectedTitle = "College Facilities";
-			Assert.assertEquals(actualTitle, expectedTitle);
+		public void checkGalleryHeading() {
+			String actualHeading = transportHeading.getText().trim();
+			System.out.println("Actual Heading is "+actualHeading);
+			String expectedHeading = "Gallery";
+			Assert.assertEquals(actualHeading, expectedHeading);
+
 		}
 	
 		

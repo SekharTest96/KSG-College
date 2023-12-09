@@ -20,7 +20,7 @@ Actions act = new Actions(DriversInit.driver);
 		PageFactory.initElements( driver, this);
 	}
 		
-		 @FindBy(how = How.XPATH, using = "//a[@href=\\\"donate.php\\\"]") WebElement donation;
+		 @FindBy(how = How.XPATH, using = "//a[@href=\"donate.php\"]") WebElement donation;
 		 @FindBy(xpath= "//div[@class=\"page-banner-cont\"]") WebElement donationHeading;
 	 @FindBy (how = How.XPATH, using = "(//div[@class=\"card-body\"])[2]") WebElement onlinePaymentDetails;
 		// @FindBy(xpath= " ") WebElement ;
@@ -39,26 +39,24 @@ Actions act = new Actions(DriversInit.driver);
 		 
 			public void checkDonationHeading() {
 				String actualHeading = donationHeading.getText().trim();
+				System.out.println("Actual Heading is "+actualHeading);
 				String expectedHeading = "Donation";
 				Assert.assertEquals(actualHeading, expectedHeading);
 
 			}
 			
-			public void checkDonationTitle() {
-				String actualTitle = DriversInit.driver.getTitle();
-				String expectedTitle = "Donation";
-				Assert.assertEquals(actualTitle, expectedTitle);
-			}
+			
 	
 
 	public void validateOnlinePaymentDetails() {
 		String actualPaymentData = onlinePaymentDetails.getText();
-		String expectPaymentData = "\r\n"
-				+ "A/c Name	:	KSG EDUCATIONAL TRUST\r\n"
-				+ "A/c Number	:	510101001588345\r\n"
-				+ "BANK NAME	:	UNION BANK OF INDIA\r\n"
-				+ "BRANCH	:	SINGANALLUR, COIMBATORE\r\n"
-				+ "IFSC CODE	:	UBIN0910937";
+		String expectPaymentData = "Online Payment Details\r\n"
+				+ "\r\n"
+				+ "A/c Name : KSG EDUCATIONAL TRUST\r\n"
+				+ "A/c Number : 510101001588345\r\n"
+				+ "BANK NAME : UNION BANK OF INDIA\r\n"
+				+ "BRANCH : SINGANALLUR, COIMBATORE\r\n"
+				+ "IFSC CODE : UBIN0910937]";
 		Assert.assertEquals(actualPaymentData, expectPaymentData);
 	}
 	

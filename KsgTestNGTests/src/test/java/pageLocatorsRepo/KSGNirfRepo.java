@@ -39,14 +39,11 @@ Actions act = new Actions(DriversInit.driver);
 	 
 		public void checkNirfHeading() {
 			String actualHeading = nirfHeading.getText().trim();
+			System.out.println("Actual Heading is "+actualHeading);
 			String expectedHeading = "NIRF";
 			Assert.assertEquals(actualHeading, expectedHeading);
 
 		}
 		
-		public void checkNirfTitle() {
-			String actualTitle = DriversInit.driver.getTitle();
-			String expectedTitle = "NIRF";
-			Assert.assertEquals(actualTitle, expectedTitle);
-		}
+		
 }

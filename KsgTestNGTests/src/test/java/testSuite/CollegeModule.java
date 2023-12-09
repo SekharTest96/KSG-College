@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -14,7 +16,7 @@ public class CollegeModule extends KSGExtentReports {
 
 	CollegeModuleRepo college = new CollegeModuleRepo(DriversInit.getDriver());
 
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportCM();
 		System.out.println("Report college of extent started.. ");
@@ -106,11 +108,15 @@ public class CollegeModule extends KSGExtentReports {
 	}
 	
 	
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report college of extent ended..  check reports at target/ExtentReport   ");
-		DriversInit.quitDriver();
+		
 	}
 
+	@AfterSuite
+	public void closeBrowser() {
+		DriversInit.quitDriver();
+	}
 }

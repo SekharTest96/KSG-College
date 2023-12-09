@@ -24,6 +24,11 @@ public class KSGServiceModuleRepo {
 	@FindBy(how = How.XPATH, using="//a[@href=\"groupinsurance.php\"]" ) WebElement groupInsurance;
 	@FindBy(xpath = "(//a[@href=\"research programme.php\"])[1]") WebElement researchProgramme;
 	@FindBy(how = How.XPATH, using="(//a[@href=\"uow.php\"])[1]" ) WebElement UOW;
+	@FindBy(xpath = "//u[contains(text(), \"Scholarships\")]") WebElement scholarshipHeading;
+	@FindBy(how = How.XPATH, using="//h2[contains(text(), \"Subbiah Yoga Center\")]" ) WebElement yogaHeading;
+	@FindBy(xpath = "//h2[contains(text(), \"Group Insurance\")]") WebElement groupInsuranceHeading;
+	@FindBy(how = How.XPATH, using="//h2[contains(text(), \"RESEARCH PROGRAMME\")]" ) WebElement researchProgrammHeading;
+	@FindBy(xpath = "//h3[contains(text(), \"UNIVERSITY OF WOLVERHAMPTON, UK\")]") WebElement uowHeading;
 	//@FindBy(xpath = "") WebElement ;
 	//@FindBy(how = How.XPATH, using="" ) WebElement ;
 	

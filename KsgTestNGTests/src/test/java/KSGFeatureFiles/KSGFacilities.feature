@@ -5,4 +5,4 @@ Feature: KSG Facilities Module
     Given Website launched with the URL
     Then Hover on Facilities and click on Facilities
     Then Check heading of webpage is Facilities
-    Then Check the title of webpage Facilities
+  

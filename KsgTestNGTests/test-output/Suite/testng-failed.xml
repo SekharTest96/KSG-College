@@ -1,88 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utilities.TestListners"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="testSuite.KSGonlineAdmissionForm">
+      <class name="testSuite.KSGDonation">
         <methods>
           <include name="beforeTests"/>
-          <include name="enter_the_valid_data_as_input_and_submit_the_form"/>
+          <include name="Check_heading_of_webpage_is_Donation"/>
+          <include name="Check_the_Online_Payment_Details_of_Donation"/>
           <include name="closeBrowser"/>
-          <include name="enter_the_invalid_data_as_input_and_submit_the_form"/>
-        </methods>
-      </class> <!-- testSuite.KSGonlineAdmissionForm -->
-      <class name="testSuite.KSGServiceModule">
-        <methods>
-          <include name="Hover_on_Placement_and_click_on_UOW"/>
-          <include name="Hover_on_Placement_and_click_on_Prof_Subbiah_Yoga_Centre"/>
           <include name="FlushReport"/>
-          <include name="Hover_on_Placement_and_click_on_Group_Insurance"/>
-          <include name="Hover_on_Placement_and_click_on_Research_Programme"/>
-          <include name="Hover_on_Placement_and_click_on_Scholarships"/>
-          <include name="beforeTests"/>
         </methods>
-      </class> <!-- testSuite.KSGServiceModule -->
-      <class name="testSuite.KSGugCoursesTest">
+      </class> <!-- testSuite.KSGDonation -->
+      <class name="testSuite.KSGFacilities">
         <methods>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_english_literature_b_a"/>
+          <include name="hover_on_Facilities_and_click_on_Facilities"/>
+          <include name="Check_heading_of_webpage_is_Facilities"/>
+          <include name="beforeTests"/>
           <include name="closeBrowser"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_b_sc_catering_science_hotel_management"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_bcom_professional_accounting_b_com_pa"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_bachelor_of_business_administration_ca"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_computer_applications_bca"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_electronics_and_communication_systems_b_sc"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_b_sc_psychology"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_biotechnology_b_sc"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_information_technology_b_sc"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_bcom_CA"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_computer_science_b_sc"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_Bcom"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_mathematics_b_sc"/>
-          <include name="openBrowser"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_b_sc_multimedia_webtechnology"/>
-        </methods>
-      </class> <!-- testSuite.KSGugCoursesTest -->
-      <class name="testSuite.CollegeModule">
-        <methods>
           <include name="FlushReport"/>
-          <include name="hover_on_college_and_click_on_achevement"/>
-          <include name="hover_on_college_and_click_on_videos"/>
-          <include name="hover_on_college_and_click_on_events1"/>
-          <include name="hover_on_college_and_click_on_management"/>
-          <include name="beforeTests"/>
-          <include name="hover_on_college_and_click_on_about_ksg"/>
-          <include name="hover_on_college_and_click_on_college_council"/>
-          <include name="hover_on_college_and_click_on_charity"/>
-          <include name="hover_on_college_and_click_on_college_committee"/>
         </methods>
-      </class> <!-- testSuite.CollegeModule -->
-      <class name="testSuite.KSGonlinePaymentTest">
-        <methods>
-          <include name="entered_invalid_details_and_clicked_on_pay"/>
-          <include name="entered_no_card_details"/>
-          <include name="navigated_to_online_payment_and_clicked_on_it"/>
-          <include name="openBrowser"/>
-          <include name="entered_invaliid_card_details"/>
-          <include name="FlushReport"/>
-          <include name="entered_valiid_card_details"/>
-          <include name="entered_no_details_and_clicked_on_pay"/>
-        </methods>
-      </class> <!-- testSuite.KSGonlinePaymentTest -->
+      </class> <!-- testSuite.KSGFacilities -->
       <class name="testSuite.KSGpgCourseDetails">
         <methods>
           <include name="hover_on_courses_hover_on_pg_course_and_select_ph_d_computer_science"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_m_com_ib"/>
+          <include name="flushReport"/>
           <include name="openBrowser"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_ma_english_literature"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_m_com_ib"/>
           <include name="hover_on_courses_hover_on_pg_course_and_select_m_phil_computer_science"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_ma_english_literature"/>
           <include name="closeBrowser"/>
-          <include name="hover_on_courses_hover_on_pg_course_and_select_msc_bio_technology"/>
           <include name="hover_on_courses_hover_on_pg_course_and_select_msc_information_technology"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_msc_bio_technology"/>
           <include name="hover_on_courses_hover_on_pg_course_and_select_msc_mathematics"/>
           <include name="hover_on_courses_hover_on_pg_course_and_select_m_phil_tamil"/>
           <include name="hover_on_courses_hover_on_pg_course_and_select_m_com_ca"/>
         </methods>
       </class> <!-- testSuite.KSGpgCourseDetails -->
+      <class name="testSuite.KSGugCoursesTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="flushReport"/>
+          <include name="openBrowser"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_b_sc_multimedia_webtechnology"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_electronics_and_communication_systems_b_sc"/>
+          <include name="hover_on_courses_hover_on_pg_course_and_select_b_sc_psychology"/>
+        </methods>
+      </class> <!-- testSuite.KSGugCoursesTest -->
+      <class name="testSuite.KSGNirf">
+        <methods>
+          <include name="hover_on_NIRF__and_click_on_NIRF"/>
+          <include name="beforeTests"/>
+          <include name="FlushReport"/>
+          <include name="closeBrowser"/>
+          <include name="Check_heading_of_webpage_is_NIRF"/>
+        </methods>
+      </class> <!-- testSuite.KSGNirf -->
+      <class name="testSuite.KSGonlineAdmissionForm">
+        <methods>
+          <include name="beforeTests"/>
+          <include name="flushReport"/>
+          <include name="enter_the_valid_data_as_input_and_submit_the_form"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- testSuite.KSGonlineAdmissionForm -->
+      <class name="testSuite.KSGContact">
+        <methods>
+          <include name="FlushReport"/>
+          <include name="Check_the_title_of_webpage_Contact"/>
+          <include name="closeBrowser"/>
+          <include name="beforeTests"/>
+        </methods>
+      </class> <!-- testSuite.KSGContact -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

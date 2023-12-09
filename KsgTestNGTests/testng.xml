@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite >
 <suite name="Suite">
+
+<listeners>
+        <listener class-name="utilities.TestListners" />
+    </listeners>
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testSuite.PlacementModule"/>
-      <class name="testSuite.KSGpgCourseDetails"/>
+         <class name="testSuite.KSGContact"/>
       <class name="testSuite.CollegeModule"/>
       <class name="testSuite.KSGugCoursesTest"/>
-      <class name="testSuite.KSGonlineAdmissionForm"/>
       <class name="testSuite.KSGServiceModule"/>
+      <class name="testSuite.KSGDonation"/>
+      <class name="testSuite.KSGCampus"/>
+      <class name="testSuite.KSGNirf"/>
+      <class name="testSuite.PlacementModule"/>
+      <class name="testSuite.KSGpgCourseDetails"/>
+      <class name="testSuite.KSGGallery"/>
+      <class name="testRunner.TestRunner"/>
+      <class name="testSuite.KSGonlineAdmissionForm"/>
+      <class name="testSuite.KSGFacilities"/>
       <class name="testSuite.KSGonlinePaymentTest"/>
     </classes>
   </test> <!-- Test -->

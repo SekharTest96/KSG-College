@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testSuite.KSGCampus">
+      <class name="testSuite.KSGNirf">
         <methods>
-          <include name="website_launched_with_the_url"/>
+          <include name="hover_on_NIRF__and_click_on_NIRF"/>
+          <include name="beforeTests"/>
+          <include name="FlushReport"/>
+          <include name="closeBrowser"/>
+          <include name="Check_heading_of_webpage_is_NIRF"/>
         </methods>
-      </class> <!-- testSuite.KSGCampus -->
+      </class> <!-- testSuite.KSGNirf -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

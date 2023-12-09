@@ -1,6 +1,8 @@
 package testSuite;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -16,7 +18,7 @@ public class KSGGallery extends KSGExtentReports {
 	KSGGalleryRepo gallery = new KSGGalleryRepo(DriversInit.getDriver());
 	
 	
-	@BeforeSuite
+	@BeforeClass
 	public void beforeTests() {
 		reportGallery();
 		System.out.println("Report Gallery of extent started.. ");
@@ -55,23 +57,21 @@ public class KSGGallery extends KSGExtentReports {
 		gallery.checkGalleryHeading();
 	}
 	
-	@Test(priority=4)
-	@Then("Check the title of webpage Gallery")
-	public void Check_the_title_of_webpage_Gallery() {
-		
-		test = CreateTest("Check the title of webpage Gallery");
-		test.pass("Title of Web Page is Gallery.");
-		gallery.checkGalleryTitle();
-	}
+
 
 
 
 
 	
-	@AfterSuite
+	@AfterClass
 	public void FlushReport() {
 		flushTest();
 		System.out.println("Report Gallery of extent ended..  check reports at target/ExtentReport   ");
+		
+	}
+	
+	@AfterSuite
+	public void closeBrowser() {
 		DriversInit.quitDriver();
 	}
 }

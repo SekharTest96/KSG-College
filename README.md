@@ -7,6 +7,6 @@ KsgJunitTest Folder consists - Automation Tests using JunitFrameWork, Cucumber B
 
 we can run all tests of all classes of junit using testrunner .
 
-KSGTestNGTest Folder consists - Automation Tests using TestNG FrameWork, Selenium, Java, Extent Reports, Maven, Eclipse IDE.
+KSGTestNGTest Folder consists - Automation Tests using TestNG FrameWork, Selenium, Java, Extent Reports, Maven, Cucumber bdd Eclipse IDE.
 
 we can run all tests of all classes of testNG using testNgxml of testsuite .

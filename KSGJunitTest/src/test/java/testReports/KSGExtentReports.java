@@ -181,6 +181,32 @@ public class KSGExtentReports {
 		extent.setSystemInfo("S Ramana Sekhar", "Tester");
 
 	}
+	
+	public static void reportSocialMedia() {
+
+		String path = Constantss.extntReportSocialMedia;
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setReportName("KSG College Automation Testing");
+		reporter.config().setDocumentTitle("KSG College Automation Test Results");
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("S Ramana Sekhar", "Tester");
+
+	}
+	
+	public static void reportLogin() {
+
+		String path = Constantss.extntReportSocialMedia;
+		ExtentSparkReporter reporter = new ExtentSparkReporter(path);
+		reporter.config().setTheme(Theme.STANDARD);
+		reporter.config().setReportName("KSG College Automation Testing");
+		reporter.config().setDocumentTitle("KSG College Automation Test Results");
+		extent = new ExtentReports();
+		extent.attachReporter(reporter);
+		extent.setSystemInfo("S Ramana Sekhar", "Tester");
+
+	}
 
 	public ExtentTest CreateTest(String testName) {
 		return extent.createTest(testName);

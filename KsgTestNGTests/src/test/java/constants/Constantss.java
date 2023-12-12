@@ -39,4 +39,8 @@ public class Constantss {
 	
 	public static final String extntReportDonation = "F:\\KSGCollege\\KsgTestNGTests\\target\\ExtentReports\\ExtentDonationReport.html";
 	
+	public static final String extntReportSocialMedia = "F:\\KSGCollege\\KsgTestNGTests\\target\\ExtentReports\\ExtentSocialMediaReport.html";
+	
+	public static final String extntReportLogin = "F:\\KSGCollege\\KsgTestNGTests\\target\\ExtentReports\\ExtentLoginReport.html";
+	
 }

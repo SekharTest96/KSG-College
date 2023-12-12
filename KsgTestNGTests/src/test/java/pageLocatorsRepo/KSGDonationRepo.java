@@ -27,8 +27,7 @@ Actions act = new Actions(DriversInit.driver);
 	// @FindBy (how = How.XPATH, using = "") WebElement ;
 		 
 		 
-		// @FindBy(xpath= " ") WebElement ;
-		 
+		
 		 
 			public void hoverOnDonationAndSelectDonation() {
 				

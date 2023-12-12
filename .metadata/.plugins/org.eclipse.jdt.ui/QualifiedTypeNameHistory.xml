@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="junit.framework.Assert"/>
-    <fullyQualifiedTypeName name="dev.failsafe.internal.util.Assert"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
     <fullyQualifiedTypeName name="io.cucumber.java.AfterAll"/>
     <fullyQualifiedTypeName name="org.junit.AfterClass"/>
-    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
     <fullyQualifiedTypeName name="org.junit.Test"/>
     <fullyQualifiedTypeName name="utilities.GetDataUsingExcel"/>
     <fullyQualifiedTypeName name="org.junit.Before"/>
     <fullyQualifiedTypeName name="constants.Constantss"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.extension.ExtendWith"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
-    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="org.junit.runner.RunWith"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
@@ -28,14 +22,9 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.api.MethodOrderer"/>
     <fullyQualifiedTypeName name="utilities.TestListnersss"/>
     <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
-    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
     <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
     <fullyQualifiedTypeName name="io.cucumber.java.en.Given"/>
-    <fullyQualifiedTypeName name="testReports.KSGExtentReports"/>
     <fullyQualifiedTypeName name="pageLocatorsRepo.CollegeModuleRepo"/>
-    <fullyQualifiedTypeName name="utilities.DriversInit"/>
-    <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
     <fullyQualifiedTypeName name="pageLocatorsRepo.KSGonlineAdmissionRepo"/>
     <fullyQualifiedTypeName name="pageLocatorsRepo.OnlinePaymentRepo"/>
     <fullyQualifiedTypeName name="com.aventstack.extentreports.ExtentTest"/>
@@ -60,4 +49,15 @@
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeTest"/>
     <fullyQualifiedTypeName name="org.testng.annotations.AfterClass"/>
     <fullyQualifiedTypeName name="org.testng.annotations.BeforeClass"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.Then"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.en.When"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.support.PageFactory"/>
+    <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
+    <fullyQualifiedTypeName name="utilities.DriversInit"/>
+    <fullyQualifiedTypeName name="pageLocatorsRepo.KSGLoginRepo"/>
+    <fullyQualifiedTypeName name="testReports.KSGExtentReports"/>
+    <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.BeforeAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.AfterAll"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
 </qualifiedTypeNameHistroy>

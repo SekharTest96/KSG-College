@@ -22,6 +22,7 @@ import stepDefinitions.KSGonlinePaymentTest;
 import stepDefinitions.KSGpgCourseDetails;
 import stepDefinitions.KSGugCoursesTest;
 import stepDefinitions.PlacementModule;
+import stepDefinitions.SocialMediaLinks;
 import utilities.TestListnersss;
 
 
@@ -41,7 +42,8 @@ import utilities.TestListnersss;
 	KSGpgCourseDetails.class,
 	KSGServiceModule.class,
 	KSGugCoursesTest.class,
-	PlacementModule.class
+	PlacementModule.class,
+	SocialMediaLinks.class
 })
 @CucumberOptions(
 		

@@ -39,7 +39,8 @@ public class CollegeModuleRepo {
 	WebElement event2;
 	@FindBy(how = How.XPATH, using = "//A[@href=\"Video.php\"]")
 	WebElement videos;
-	
+	// @FindBy(xpath= " ") WebElement ;
+		// @FindBy (how = How.XPATH, using = "") WebElement ;
 	
 
 	public void hoverOnCollegeAndSelectaboutKSG1() {

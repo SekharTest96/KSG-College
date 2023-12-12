@@ -5,7 +5,7 @@
 <listeners>
         <listener class-name="utilities.TestListners" />
     </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="6" name="Test">
     <classes>
          <class name="testSuite.KSGContact"/>
       <class name="testSuite.CollegeModule"/>
@@ -20,7 +20,8 @@
       <class name="testRunner.TestRunner"/>
       <class name="testSuite.KSGonlineAdmissionForm"/>
       <class name="testSuite.KSGFacilities"/>
-      <class name="testSuite.KSGonlinePaymentTest"/>
+      <class name="testSuite.KSGonlinePaymentTest"/> 
+      <class name="testSuite.SocialMediaLinks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

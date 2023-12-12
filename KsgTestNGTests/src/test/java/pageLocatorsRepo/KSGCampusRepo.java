@@ -30,6 +30,7 @@ public class KSGCampusRepo {
 	@FindBy(how = How.XPATH, using = "//center[contains(text(), \"NSS PROGRAMME OFFICER\")]")
 	WebElement nssHeading;
 	// @FindBy(xpath= " ") WebElement ;
+		// @FindBy (how = How.XPATH, using = "") WebElement ;
 
 	public void hoverOnCampusAndSelectCampus() {
 		act.moveToElement(campus1).build().perform();

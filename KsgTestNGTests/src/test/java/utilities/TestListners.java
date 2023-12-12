@@ -17,7 +17,7 @@ public class TestListners implements ITestListener {
 
 	@Override
 	public void onTestStart(ITestResult result) {
-		
+		System.out.println(" ");
 		System.out.println("On Test Start - "+result.getName());
 		System.out.println(" ");
 		
@@ -25,7 +25,7 @@ public class TestListners implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		
+		System.out.println(" ");
 		System.out.println("On Test Sucess.."+result.getName());
 		
 		System.out.println(" ");
@@ -40,7 +40,7 @@ public class TestListners implements ITestListener {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		System.out.println(" ");
 		Reporter.log("This test is failed. its screenshot is kept in "+ScreenShotPath + " is sucess. ");
 		System.out.println(" ");
 	}
@@ -61,41 +61,42 @@ public class TestListners implements ITestListener {
 			e.printStackTrace();
 		}
 		
+		System.out.println(" ");
 		Reporter.log("This test is failed. its screenshot is kept in "+ScreenShotPath + " is failed. ");
 		System.out.println(" ");
 	}
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		
+		System.out.println(" ");
 		System.out.println(""+result.getName());
 		System.out.println(" ");
 	}
 
 	@Override
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		
+		System.out.println(" ");
 		System.out.println(""+result.getName());
 		System.out.println(" ");
 	}
 
 	@Override
 	public void onTestFailedWithTimeout(ITestResult result) {
-		
+		System.out.println(" ");
 		System.out.println(""+result.getName());
 		System.out.println(" ");
 	}
 
 	@Override
 	public void onStart(ITestContext context) {
-	
+		System.out.println(" ");
 		System.out.println(""+context.getName());
 		System.out.println(" ");
 	}
 
 	@Override
 	public void onFinish(ITestContext context) {
-	
+		System.out.println(" ");
 		System.out.println(""+context.getName());
 		System.out.println(" ");
 	}

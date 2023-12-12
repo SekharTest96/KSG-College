@@ -34,18 +34,21 @@ public class TestListnersss implements TestWatcher {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        System.out.println(" ");
         System.out.println("This test is successful. Its screenshot is kept in " + ScreenShotPath + " is success. ");
         System.out.println(" ");
     }
 
     @Override
     public  void testAborted(ExtensionContext context, Throwable cause) {
+    	 System.out.println(" ");
         TestWatcher.super.testAborted(context, cause);
+        System.out.println(" ");
     }
 
     @Override
     public  void testFailed(ExtensionContext context, Throwable cause) {
+    	 System.out.println(" ");
         TestWatcher.super.testFailed(context, cause);
 
         System.out.println(" ");
@@ -60,6 +63,7 @@ public class TestListnersss implements TestWatcher {
             e.printStackTrace();
         }
 
+        System.out.println(" ");
         System.out.println("This test is failed. Its screenshot is kept in " + ScreenShotPath + " is success. ");
         System.out.println(" ");
     }
